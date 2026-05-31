@@ -2,13 +2,10 @@
 
 import { useState, useMemo, useCallback } from "react";
 import Link from "next/link";
-import { ArrowLeft, Filter, BookOpen, CheckCircle2, BookmarkIcon } from "lucide-react";
-import { motion } from "framer-motion";
+import { ArrowLeft, BookOpen, AlertTriangle } from "lucide-react";
 import type { Chapter, Question } from "@/types";
 import QuestionCard from "@/components/QuestionCard";
 import SearchBar from "@/components/SearchBar";
-import FilterBar from "@/components/FilterBar";
-import SkeletonCard from "@/components/SkeletonCard";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -33,15 +30,22 @@ export default function ChapterQuestions({ chapter, questions, years }: ChapterQ
   const [marksFilter, setMarksFilter] = useState("");
   const [yearFilter, setYearFilter] = useState("");
   const [page, setPage] = useState(1);
-  const [showFilters, setShowFilters] = useState(false);
+  const [showOutOfSyllabus, setShowOutOfSyllabus] = useState(false);
 
   const chapterYears = useMemo(
     () => chapter.years.slice().sort((a, b) => b - a),
     [chapter.years]
   );
 
+  const outOfSyllabusCount = useMemo(
+    () => questions.filter((q) => q.in_syllabus === false).length,
+    [questions]
+  );
+
   const filtered = useMemo(() => {
-    let list = questions;
+    let list = showOutOfSyllabus
+      ? questions
+      : questions.filter((q) => q.in_syllabus !== false);
     if (marksFilter) list = list.filter((q) => String(q.marks) === marksFilter);
     if (yearFilter) list = list.filter((q) => String(q.year) === yearFilter);
     if (search.trim()) {
@@ -49,7 +53,7 @@ export default function ChapterQuestions({ chapter, questions, years }: ChapterQ
       list = list.filter((q) => q.question.toLowerCase().includes(s));
     }
     return list;
-  }, [questions, marksFilter, yearFilter, search]);
+  }, [questions, marksFilter, yearFilter, search, showOutOfSyllabus]);
 
   const paginated = useMemo(
     () => filtered.slice(0, page * PAGE_SIZE),
@@ -62,6 +66,8 @@ export default function ChapterQuestions({ chapter, questions, years }: ChapterQ
     setYearFilter("");
     setPage(1);
   }, []);
+
+  const inSyllabusCount = questions.length - outOfSyllabusCount;
 
   return (
     <div className="px-4 sm:px-6 lg:px-8 py-6">
@@ -82,25 +88,18 @@ export default function ChapterQuestions({ chapter, questions, years }: ChapterQ
             <div className="flex flex-wrap items-center gap-3 text-sm text-gray-500 dark:text-gray-400">
               <span className="flex items-center gap-1">
                 <BookOpen className="h-3.5 w-3.5" />
-                {chapter.count} questions
+                {inSyllabusCount} in-syllabus questions
               </span>
+              {outOfSyllabusCount > 0 && (
+                <span className="text-amber-600 dark:text-amber-500">
+                  +{outOfSyllabusCount} removed from syllabus
+                </span>
+              )}
               {chapter.years.length > 0 && (
                 <span>{Math.min(...chapter.years)}–{Math.max(...chapter.years)}</span>
               )}
-              <span>
-                {Object.entries(chapter.marks_dist).map(([m, c]) => `${c}×${m}m`).join(" · ")}
-              </span>
             </div>
           </div>
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setShowFilters(!showFilters)}
-            className="gap-2 shrink-0"
-          >
-            <Filter className="h-3.5 w-3.5" />
-            {showFilters ? "Hide Filters" : "Filters"}
-          </Button>
         </div>
       </div>
 
@@ -113,7 +112,7 @@ export default function ChapterQuestions({ chapter, questions, years }: ChapterQ
           className="mb-3"
         />
 
-        {/* Marks tabs */}
+        {/* Marks tabs + year filter */}
         <div className="flex items-center gap-1 overflow-x-auto pb-1">
           {MARKS_TABS.map((tab) => (
             <button
@@ -147,15 +146,31 @@ export default function ChapterQuestions({ chapter, questions, years }: ChapterQ
               ))}
             </select>
           </div>
+
+          {/* Out-of-syllabus toggle */}
+          {outOfSyllabusCount > 0 && (
+            <button
+              onClick={() => { setShowOutOfSyllabus(!showOutOfSyllabus); setPage(1); }}
+              className={cn(
+                "ml-2 shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium border transition-colors",
+                showOutOfSyllabus
+                  ? "bg-amber-100 dark:bg-amber-900/30 border-amber-300 dark:border-amber-700 text-amber-700 dark:text-amber-400"
+                  : "bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 hover:bg-amber-50 dark:hover:bg-amber-900/20"
+              )}
+            >
+              <AlertTriangle className="h-3 w-3" />
+              {showOutOfSyllabus ? "Hide removed" : `Show +${outOfSyllabusCount} removed`}
+            </button>
+          )}
         </div>
       </div>
 
       {/* Results count */}
       <div className="flex items-center justify-between mb-4">
         <p className="text-sm text-gray-500 dark:text-gray-400">
-          {filtered.length === questions.length
-            ? `${questions.length} questions`
-            : `${filtered.length} of ${questions.length} questions`}
+          {filtered.length === (showOutOfSyllabus ? questions.length : inSyllabusCount)
+            ? `${filtered.length} questions`
+            : `${filtered.length} of ${showOutOfSyllabus ? questions.length : inSyllabusCount} questions`}
         </p>
         {(search || marksFilter || yearFilter) && (
           <button
