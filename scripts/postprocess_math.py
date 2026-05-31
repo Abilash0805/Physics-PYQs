@@ -33,11 +33,10 @@ ELEMENTS = (
     'Se|Br|Kr|Rb|Sr|Zr|Nb|Mo|Tc|Ru|Rh|Pd|Ag|Cd|In|Sn|Sb|Te|Xe|Cs|Ba|La|Ce|'
     'Nd|Pm|Sm|Eu|Gd|Tb|Dy|Ho|Er|Tm|Yb|Lu|Hf|Ta|Re|Os|Ir|Pt|Au|Hg|Tl|Pb|Bi|'
     'Po|At|Rn|Fr|Ra|Ac|Th|Pa|Np|Pu|Am|Cm|'
-    'H|B|C|N|O|F|P|S|K|V|W|U|Y|I'  # single-letter last
+    'H|B|C|N|O|F|P|S|K|V|W|U|Y|I'
 )
 
 def fix_nuclear(text):
-    """'238 92 U' → '${}^{238}_{92}\\text{U}$'"""
     pat = re.compile(r'\b(\d{1,3})\s+(\d{1,2})\s+(' + ELEMENTS + r')\b')
     return pat.sub(
         lambda m: f'${{}}^{{{m.group(1)}}}_{{{m.group(2)}}}\\text{{{m.group(3)}}}$',
@@ -45,40 +44,25 @@ def fix_nuclear(text):
     )
 
 
-# ── Unicode → LaTeX (produces raw LaTeX, NOT wrapped in $) ───────────────────
+# ── Unicode → raw LaTeX (no $ wrapping yet) ───────────────────────────────────
 
 GREEK = {
     'α': r'\alpha', 'β': r'\beta', 'γ': r'\gamma', 'Γ': r'\Gamma',
     'δ': r'\delta', 'Δ': r'\Delta', 'ε': r'\varepsilon', 'ζ': r'\zeta',
     'η': r'\eta', 'θ': r'\theta', 'Θ': r'\Theta', 'ι': r'\iota',
     'κ': r'\kappa', 'λ': r'\lambda', 'Λ': r'\Lambda', 'μ': r'\mu',
-    'µ': r'\mu',   # micro sign
-    'ν': r'\nu', 'ξ': r'\xi', 'Ξ': r'\Xi', 'π': r'\pi', 'Π': r'\Pi',
-    'ρ': r'\rho', 'σ': r'\sigma', 'Σ': r'\Sigma', 'τ': r'\tau',
-    'υ': r'\upsilon', 'φ': r'\phi', 'Φ': r'\Phi', 'χ': r'\chi',
-    'ψ': r'\psi', 'Ψ': r'\Psi', 'ω': r'\omega', 'Ω': r'\Omega',
+    'µ': r'\mu', 'ν': r'\nu', 'ξ': r'\xi', 'Ξ': r'\Xi', 'π': r'\pi',
+    'Π': r'\Pi', 'ρ': r'\rho', 'σ': r'\sigma', 'Σ': r'\Sigma',
+    'τ': r'\tau', 'υ': r'\upsilon', 'φ': r'\phi', 'Φ': r'\Phi',
+    'χ': r'\chi', 'ψ': r'\psi', 'Ψ': r'\Psi', 'ω': r'\omega', 'Ω': r'\Omega',
 }
-
 OPERATORS = {
-    '×': r'\times',
-    '÷': r'\div',
-    '≤': r'\leq',
-    '≥': r'\geq',
-    '≠': r'\neq',
-    '≈': r'\approx',
-    '∝': r'\propto',
-    '∞': r'\infty',
-    '∫': r'\int',
-    '∑': r'\sum',
-    '∂': r'\partial',
-    '∇': r'\nabla',
-    '→': r'\rightarrow',
-    '←': r'\leftarrow',
-    '⇒': r'\Rightarrow',
-    '°': r'^\circ',
-    '−': '-',  # unicode minus → ascii
+    '×': r'\times', '÷': r'\div', '≤': r'\leq', '≥': r'\geq',
+    '≠': r'\neq', '≈': r'\approx', '∝': r'\propto', '∞': r'\infty',
+    '∫': r'\int', '∑': r'\sum', '∂': r'\partial', '∇': r'\nabla',
+    '→': r'\rightarrow', '←': r'\leftarrow', '⇒': r'\Rightarrow',
+    '°': r'^\circ', '−': '-',
 }
-
 SQRT_TOKEN = '__SQRT__'
 
 def apply_unicode(text):
@@ -91,58 +75,64 @@ def apply_unicode(text):
 # ── SQRT patterns ─────────────────────────────────────────────────────────────
 
 def fix_sqrt(seg):
-    """Handle SQRT_TOKEN patterns within a non-math segment."""
-    # "NUM __SQRT__ NUM" → $\frac{NUM}{\sqrt{NUM}}$
+    # "NUM __SQRT__ NUM"  →  $\frac{NUM}{\sqrt{NUM}}$
     seg = re.sub(
         r'(?<![A-Za-z_$])(\d+(?:\.\d+)?)\s+' + re.escape(SQRT_TOKEN) + r'\s+(\d+(?:\.\d+)?)(?!\d)',
         lambda m: f'$\\frac{{{m.group(1)}}}{{\\sqrt{{{m.group(2)}}}}}$',
         seg
     )
-    # "__SQRT__ NUM" → $\sqrt{NUM}$
+    # "NUM __SQRT__ WORD" e.g. "1 √ LC"  →  $\frac{NUM}{\sqrt{WORD}}$
+    seg = re.sub(
+        r'(?<![A-Za-z_$])(\d+(?:\.\d+)?)\s+' + re.escape(SQRT_TOKEN) + r'\s+([A-Za-z][A-Za-z0-9]*)',
+        lambda m: f'$\\frac{{{m.group(1)}}}{{\\sqrt{{{m.group(2)}}}}}$',
+        seg
+    )
+    # "WORD __SQRT__ NUM"  →  $\frac{WORD}{\sqrt{NUM}}$  (e.g. "V0 √ 2")
+    seg = re.sub(
+        r'([A-Za-z]\w*)\s+' + re.escape(SQRT_TOKEN) + r'\s+(\d+(?:\.\d+)?)',
+        lambda m: f'$\\frac{{{m.group(1)}}}{{\\sqrt{{{m.group(2)}}}}}$',
+        seg
+    )
+    # "__SQRT__ NUM"  →  $\sqrt{NUM}$
     seg = re.sub(
         re.escape(SQRT_TOKEN) + r'\s*(\d+(?:\.\d+)?)',
         lambda m: f'$\\sqrt{{{m.group(1)}}}$',
         seg
     )
-    # "__SQRT__ {EXPR}" or bare __SQRT__
-    seg = seg.replace(SQRT_TOKEN, r'$\sqrt{}$')
+    # "__SQRT__ WORD"  →  $\sqrt{WORD}$
+    seg = re.sub(
+        re.escape(SQRT_TOKEN) + r'\s*([A-Za-z][A-Za-z0-9]*)',
+        lambda m: f'$\\sqrt{{{m.group(1)}}}$',
+        seg
+    )
+    # bare __SQRT__
+    seg = seg.replace(SQRT_TOKEN, r'$\sqrt{\cdot}$')
     return seg
 
 
-# ── Subscripts / superscripts ─────────────────────────────────────────────────
+# ── Subscripts ────────────────────────────────────────────────────────────────
 
 def fix_subscripts(seg):
-    """Convert physics subscript patterns in plain text."""
-    # XL, XC, XR reactance
     seg = re.sub(r'\bX([LCR])\b', r'$X_{\1}$', seg)
-    # VL, VC, VR, VR
     seg = re.sub(r'\bV([LCR])\b', r'$V_{\1}$', seg)
-    # Peak/amplitude: V0, I0, E0, B0, v0, i0
     seg = re.sub(r'\b([VIEvBbi])0\b', r'$\1_0$', seg)
-    # vm, im, Em, Vm — amplitude with subscript m
     seg = re.sub(r'\b([VIEvi])m\b', r'$\1_m$', seg)
-    # Component labels C1,C2,L1,L2,R1,R2,i1,i2,v1,v2
     seg = re.sub(r'\b([CLRilrn])([12345])\b', r'$\1_\2$', seg)
-    # C1/C2 ratio keeps as fraction
     return seg
 
 
-# ── Scientific notation & fractions ──────────────────────────────────────────
+# ── Scientific notation ───────────────────────────────────────────────────────
 
 def fix_sci_notation(seg):
-    # "4.5 \times 10^9" (after unicode replacement)
+    # "N \times 10^M" or "N \times 10 M"
     seg = re.sub(
         r'(\d+(?:\.\d+)?)\s*\\times\s*10\s*\^?\s*\{?(-?\d+)\}?',
         lambda m: f'${m.group(1)} \\times 10^{{{m.group(2)}}}$',
         seg
     )
-    # "10-3" meaning 10^{-3}
-    seg = re.sub(
-        r'\b10-(\d+)\b',
-        lambda m: f'$10^{{-{m.group(1)}}}$',
-        seg
-    )
-    # "10^5 4\pi" from fraction → $\frac{10^5}{4\pi}$
+    # "10-N" meaning 10^{-N}
+    seg = re.sub(r'\b10-(\d+)\b', lambda m: f'$10^{{-{m.group(1)}}}$', seg)
+    # "10^N / denom\pi" patterns
     seg = re.sub(
         r'10\^?\{?(\d+)\}?\s+(\d*)\\pi',
         lambda m: f'$\\frac{{10^{{{m.group(1)}}}}}{{{m.group(2)}\\pi}}$',
@@ -151,38 +141,110 @@ def fix_sci_notation(seg):
     return seg
 
 
-# ── Wrap bare LaTeX commands in $ ─────────────────────────────────────────────
+# ── Wrap bare LaTeX commands ──────────────────────────────────────────────────
 
-LATEX_CMDS = (
+LATEX_CMD_RE = re.compile(
     r'\\(?:alpha|beta|gamma|delta|varepsilon|epsilon|zeta|eta|theta|iota|kappa|'
     r'lambda|mu|nu|xi|pi|rho|sigma|tau|upsilon|phi|chi|psi|omega|'
     r'Gamma|Delta|Theta|Lambda|Xi|Pi|Sigma|Upsilon|Phi|Psi|Omega|'
-    r'vec\{[^}]+\}|hat\{[^}]+\}|bar\{[^}]+\}|'
     r'times|div|leq|geq|neq|approx|propto|rightarrow|leftarrow|Rightarrow|'
-    r'infty|pm|mp|cdot|partial|nabla|sin|cos|tan|log|ln|exp|int|sum|sqrt|frac|circ)'
+    r'infty|pm|mp|cdot|partial|nabla|sin|cos|tan|log|ln|exp|'
+    r'int|sum|sqrt|frac|circ|text)(?:\{[^}]*\})*'
 )
 
 def wrap_bare_latex(seg):
-    """Wrap LaTeX commands that appear bare (not inside $...$) in $...$."""
-    # Find the longest contiguous math expression around each command
-    # Heuristic: grab surrounding math-like tokens
-    MATH_TOKEN = r'(?:\\[A-Za-z]+(?:\{[^}]*\})*|[A-Za-z0-9_^{}\[\]()\+\-\*\/\.,\s])'
-
-    def replacer(m):
-        return f'${m.group(0).strip()}$'
-
-    # Simple: each bare \cmd → $\cmd$
-    seg = re.sub(LATEX_CMDS, replacer, seg)
-
-    # Merge adjacent $...$ blocks separated only by whitespace or simple tokens
-    # e.g. "$\omega$ t" → "$\omega t$" is not always right, keep separate for safety
-    return seg
+    return LATEX_CMD_RE.sub(lambda m: f'${m.group(0).strip()}$', seg)
 
 
-def merge_adjacent_math(text):
-    """Merge '$A$ $B$' → '$A B$' when they form a single expression."""
-    # Merge cases like "$\omega$ t" into "$\omega t$" only if t is a simple variable
-    text = re.sub(r'\$([^$]+)\$\s+([a-zA-Z])\b(?!\s*=)', r'$\1 \2$', text)
+# ── Fix fractions: $expr$ DIGIT (denominator) ─────────────────────────────────
+
+def fix_denominator_fractions(text):
+    """
+    Convert patterns like "$V_0$ 2", "$i_0 v_0$ 2", "$\pi$ 3" to fractions.
+    These arise from PDF fraction flattening: A/B extracted as "A B".
+    Only apply when the digit appears isolated (followed by space/comma/paren).
+    """
+    # "$math$ DIGIT" where DIGIT is 2,3,4,6,8 and followed by word boundary
+    text = re.sub(
+        r'\$([^$]+)\$ (\d)(?=[\s,)(.\n]|$)',
+        lambda m: f'$\\frac{{{m.group(1)}}}{{{m.group(2)}}}$',
+        text
+    )
+    return text
+
+
+# ── Fix $\pi$ N and N$\pi$ M fraction patterns ───────────────────────────────
+
+def fix_pi_fractions(text):
+    # "N$\pi$ M" or "N $\pi$ M"  →  "$\frac{N\pi}{M}$"  (run FIRST, more specific)
+    text = re.sub(
+        r'(\d)\s*\$\\pi\$ (\d+)(?=[\s,)(.;:]|$)',
+        lambda m: f'$\\frac{{{m.group(1)}\\pi}}{{{m.group(2)}}}$',
+        text
+    )
+    # "$\pi$ N"  →  "$\frac{\pi}{N}$"
+    text = re.sub(
+        r'\$\\pi\$ (\d+)(?=[\s,)(.;:]|$)',
+        lambda m: f'$\\frac{{\\pi}}{{{m.group(1)}}}$',
+        text
+    )
+    # "$expr$ $\pi$"  →  "$\frac{expr}{\pi}$"  (adjacent math block with pi as denominator)
+    text = re.sub(
+        r'\$([^$]+)\$ \$\\pi\$(?=[\s,)(.;:]|$)',
+        lambda m: f'$\\frac{{{m.group(1)}}}{{\\pi}}$',
+        text
+    )
+    # "N$\frac{\pi}{M}$"  →  "$\frac{N\pi}{M}$"  (coefficient before pi fraction)
+    text = re.sub(
+        r'(\d)\$\\frac\{\\pi\}\{(\d+)\}\$',
+        lambda m: f'$\\frac{{{m.group(1)}\\pi}}{{{m.group(2)}}}$',
+        text
+    )
+    return text
+
+
+# ── Fix $\omega$N (superscript) ───────────────────────────────────────────────
+
+def fix_omega_superscript(text):
+    # "$\omega$2" meaning ω²
+    text = re.sub(r'\$\\omega\$(\d)', lambda m: f'$\\omega^{m.group(1)}$', text)
+    # "$\omega$0" as resonant frequency ω₀
+    text = re.sub(r'\$\\omega\$0\b', r'$\\omega_0$', text)
+    return text
+
+
+# ── Fix subscripts inside existing math blocks ───────────────────────────────
+
+def fix_subscripts_inside_math(text):
+    """Fix V0 → V_0 etc. inside already-formed $...$ blocks."""
+    def fix_block(m):
+        inner = m.group(1)
+        # Variable+digit subscript patterns inside math
+        inner = re.sub(r'([A-Za-z])0\b', r'\1_0', inner)
+        inner = re.sub(r'([A-Za-z])m\b', r'\1_m', inner)
+        return f'${inner}$'
+    return re.sub(r'\$([^$]+)\$', fix_block, text)
+
+
+# ── Fix empty sqrt: "$\sqrt{}$ WORD"  →  "$\sqrt{WORD}$" ────────────────────
+
+def fix_empty_sqrt(text):
+    # "$\sqrt{}$ WORD" or "N $\sqrt{}$ WORD"
+    text = re.sub(
+        r'(\d+) \$\\sqrt\{\}?\$\s*([A-Za-z][A-Za-z0-9]*)',
+        lambda m: f'$\\frac{{{m.group(1)}}}{{\\sqrt{{{m.group(2)}}}}}$',
+        text
+    )
+    text = re.sub(
+        r'\$\\sqrt\{\}?\$ ([A-Za-z][A-Za-z0-9]*)',
+        lambda m: f'$\\sqrt{{{m.group(1)}}}$',
+        text
+    )
+    text = re.sub(
+        r'\$\\sqrt\{\}\$',
+        r'$\\sqrt{\\cdot}$',
+        text
+    )
     return text
 
 
@@ -192,13 +254,17 @@ def process(text):
     if not text:
         return text
 
+    # 0. Strip PDF control characters and normalise whitespace
+    text = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', '', text)
+    text = re.sub(r'  +', ' ', text)
+
     # 1. Nuclear notation first (outputs $...$)
     text = fix_nuclear(text)
 
-    # 2. Unicode normalisation (operates only on non-math parts)
+    # 2. Unicode normalisation (non-math only)
     text = apply_to_nonmath(text, apply_unicode)
 
-    # 3. SQRT patterns (non-math parts only)
+    # 3. SQRT patterns (non-math only)
     text = apply_to_nonmath(text, fix_sqrt)
 
     # 4. Subscripts (non-math only)
@@ -210,14 +276,24 @@ def process(text):
     # 6. Wrap bare LaTeX commands (non-math only)
     text = apply_to_nonmath(text, wrap_bare_latex)
 
-    # 7. Merge adjacent math blocks
-    text = merge_adjacent_math(text)
+    # 7. Fix $expr$ N denominator fractions (whole text - needs $ context)
+    text = fix_denominator_fractions(text)
 
-    # 8. Clean up empty $$ and double $$
-    text = re.sub(r'\$\s*\$', '', text)
-    text = re.sub(r'\$\$([^$]+?)\$\$', r'$\1$', text)
-    # Remove $ that wraps only whitespace
-    text = re.sub(r'\$\s+\$', '', text)
+    # 8. Fix $\pi$ N patterns
+    text = fix_pi_fractions(text)
+
+    # 9. Fix $\omega$N superscripts
+    text = fix_omega_superscript(text)
+
+    # 10. Fix empty $\sqrt{}$ patterns
+    text = fix_empty_sqrt(text)
+
+    # 11. Fix subscripts inside math blocks (V0 → V_0 in fractions etc.)
+    text = fix_subscripts_inside_math(text)
+
+    # 12. Clean up: remove truly empty math $$ (NOT adjacent blocks)
+    text = re.sub(r'\$\$', '', text)     # literal $$ with nothing → remove
+    text = re.sub(r'\$ \$', ' ', text)   # "$ $" (space only) → space
 
     return text
 
@@ -226,7 +302,6 @@ def main():
     data_path = 'src/data/pyq_data.json'
     raw_path  = 'src/data/pyq_data_raw.json'
 
-    # Use original raw backup if available
     src = raw_path if os.path.exists(raw_path) else data_path
     print(f'Loading from {src}')
     with open(src, 'r', encoding='utf-8') as f:
@@ -249,11 +324,24 @@ def main():
         json.dump(data, f, ensure_ascii=False, indent=2)
     print(f'Saved → {data_path}  ({os.path.getsize(data_path)//1024} KB)')
 
-    # Print samples with math
-    print('\n── Sample output ──')
-    samples = [q for q in data['questions'] if '$' in q['question']][:8]
+    # Audit
+    print('\n── Audit ──')
+    qs = data['questions']
+    empty_sq = sum(1 for q in qs if r'$\sqrt{}$' in q['question'])
+    denom_remaining = sum(1 for q in qs if re.search(r'\$[^$]+\$ \d(?=[\s,).]|$)', q['question']))
+    pi_frac = sum(1 for q in qs if re.search(r'\$\\pi\$ \d', q['question']))
+    omega_sup = sum(1 for q in qs if re.search(r'\$\\omega\$\d', q['question']))
+    odd_dollar = sum(1 for q in qs if q['question'].count('$') % 2 != 0)
+    print(f'  Odd dollar signs: {odd_dollar}')
+    print(f'  Empty sqrt remaining: {empty_sq}')
+    print(f'  $pi$ N fractions: {pi_frac}')
+    print(f'  $omega$digit: {omega_sup}')
+    print(f'  $expr$ digit (denom): {denom_remaining}')
+
+    print('\n── Samples ──')
+    samples = [q for q in qs if '$\\frac' in q['question']][:5]
     for q in samples:
-        print(f"  {q['question'][:220]}")
+        print(f'  {q["question"][:220]}')
         print()
 
 
