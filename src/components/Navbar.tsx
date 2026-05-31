@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import { Atom, Moon, Sun, Menu, X, Search, BookmarkIcon, BookOpen, Home, CheckSquare } from "lucide-react";
+import { Moon, Sun, Menu, X, Search, BookmarkIcon, BookOpen, Home, CheckSquare } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
@@ -39,13 +40,8 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 dark:bg-gray-950/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-gray-950/60">
       <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 shrink-0">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-            <Atom className="h-4 w-4 text-white" />
-          </div>
-          <span className="font-bold text-gray-900 dark:text-gray-100 hidden sm:block">
-            Physics<span className="text-blue-600">PYQ</span>
-          </span>
+        <Link href="/" className="flex items-center shrink-0">
+          <Image src="/logo.png" alt="Class 12 Physics PYQs" width={120} height={48} className="h-10 w-auto object-contain" priority />
         </Link>
 
         {/* Desktop nav */}
