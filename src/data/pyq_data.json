@@ -1017,7 +1017,7 @@
       "marks": 1,
       "year": 2015,
       "question": "Draw a graph to show variation of capacitive-reactance with frequency in an a.c. circuit.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Alternating Current.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -1270,7 +1270,7 @@
       "marks": 1,
       "year": 2007,
       "question": "Calculate the current drawn by the primary of a transformer which steps down 200 V to 20 V to operate a device of resistance 20 Ω. Assume the efficiency of the transformer to be 80%.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use $V_s/V_p = N_s/N_p$ (voltage ratio) and $I_pV_p = I_sV_s$ (power conservation for ideal transformer). Substitute given values to find the required quantity.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -1336,7 +1336,7 @@
       "marks": 1,
       "year": 2026,
       "question": "(a) Differentiate between inductive reactance, capacitive reactance and impedance of an ac circuit. (b) An ideal inductor and an ideal capacitor are connected in series across an ac voltage. Plot a graph showing variation of net reactance of the circuit with frequency of the applied ac voltage.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Alternating Current.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -1391,7 +1391,7 @@
       "marks": 1,
       "year": 2025,
       "question": "An ac source of voltage V = $V_0$ sin $\\omega$t is connected to a circuit element X. It is observed that the current flowing through X varies as I = $I_0$ sin $\\omega$t -$\\frac{\\pi}{2}$ . (a) Identify the element X and write the expression for its reactance. (b) Plot a graph to show the variation of reactance of the element with the frequency of the applied voltage. (c) Draw plots showing the variation of voltage and current with time over one cycle of applied ac.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Alternating Current.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -1534,7 +1534,7 @@
       "marks": 1,
       "year": 2023,
       "question": "(a) An ac source V = $V_m$ sin $\\omega$t is connected across an ideal capacitor. Derive the expres- sion for the (i) current flowing in the circuit, and (ii) reactance of the capacitor. Plot a graph of current i versus $\\omega$t. OR (b) A series combination of an inductor L, a capacitor C and a resistor R is connected across an ac source of voltage in a circuit. Obtain an expression for the average power consumed by the circuit. Find power factor for (i) purely inductive circuit, and (ii) purely resistive circuit.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Alternating Current.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -1589,7 +1589,7 @@
       "marks": 1,
       "year": 2023,
       "question": "An alternating current I = 14 sin(100$\\pi$t) A passes through a series combination of a resistor of 30 Ωand an inductor of 2 5$\\pi$ H. $\\frac{Taking}{\\sqrt{2}}$ = 1.4, calculate the (i) rms value of the voltage drops across the resistor and the inductor, and (ii) power factor of the circuit.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Average power $P = V_{rms}I_{rms}\\cos\\phi = I_{rms}^2 R$. Impedance $Z = \\sqrt{R^2+(X_L-X_C)^2}$; $I_{rms} = V_{rms}/Z$; $\\cos\\phi = R/Z$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -1600,7 +1600,7 @@
       "marks": 1,
       "year": 2021,
       "question": "(i) In an LCR series circuit connected to an ac source, the voltage and the current are in the same phase. If the capacitor is filled with a dielectric, will the current lead or lag behind or remain in phase with the voltage? Explain. (ii) In the circuit, why is the rms value of net voltage not equal to the sum of voltage drops across individual elements? (iii) Draw a graph showing variation of the impedance of the circuit with the frequency of the applied voltage.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Alternating Current.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -1809,7 +1809,7 @@
       "marks": 1,
       "year": 2016,
       "question": "A capacitor of unknown capacitance, a resistor of 100 Ωand an inductor of self inductance L = (4/$\\pi$2) henry are connected in series to an ac source of 200 V and 50 Hz. Calculate the value of the capacitance and impedance of the circuit when the current is in phase with the voltage. Calculate the power dissipated in the circuit.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Average power $P = V_{rms}I_{rms}\\cos\\phi = I_{rms}^2 R$. Impedance $Z = \\sqrt{R^2+(X_L-X_C)^2}$; $I_{rms} = V_{rms}/Z$; $\\cos\\phi = R/Z$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -1820,7 +1820,7 @@
       "marks": 1,
       "year": 2015,
       "question": "A series LCR circuit is connected across an a.c. source of variable angular frequency ’$\\omega$’. Plot a graph showing variation of current ’i’ as a function of ’$\\omega$’ for two resistances $R_1$ and $R_2$ ($R_1$ > $R_2$). Answer the following questions using this graph: (a) In which case is the resonance sharper and why? (b) In which case is the power dissipation more and why?",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Alternating Current.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -1897,7 +1897,7 @@
       "marks": 1,
       "year": 2008,
       "question": "An inductor 200 mH, capacitor 500 $\\mu$F, resistor 10 Ωare connected in series with a 100 V , variable frequency a.c. source. Calculate the (i) frequency at which the power factor of the source is unity (ii) current amplitude at this frequency (iii) Q-factor",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Average power $P = V_{rms}I_{rms}\\cos\\phi = I_{rms}^2 R$. Impedance $Z = \\sqrt{R^2+(X_L-X_C)^2}$; $I_{rms} = V_{rms}/Z$; $\\cos\\phi = R/Z$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -1996,7 +1996,7 @@
       "marks": 1,
       "year": 2026,
       "question": "(a) (i) Define the terms (I) resonant frequency, and (II) power factor of a series LCR circuit. For what value of the power factor will the power dissipated in the circuit be maximum? (ii) An inductor of 5 H, a capacitor of 50 $\\mu$F and a resistor of 400 Ωare connected in series across an ac voltage v = 140 sin(100$\\pi$t) V. Calculate: (I) impedance of the circuit, and (II) rms value of current that flows in the circuit. ($\\frac{Take}{\\sqrt{2}}$ = 1 · 4) OR (b) (i) Draw a labelled diagram of a step-up transformer. Obtain the ratio of secondary voltage to primary voltage in terms of number of turns in the two coils. (ii) The number of turns in the primary and the secondary coil of an ideal transformer are 100 and 5000 respectively. If 3·3 kW power is supplied to the transformer at 220 V, find (I) current in the primary coil, and (II) output voltage.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use $V_s/V_p = N_s/N_p$ (voltage ratio) and $I_pV_p = I_sV_s$ (power conservation for ideal transformer). Substitute given values to find the required quantity.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -2007,7 +2007,7 @@
       "marks": 1,
       "year": 2025,
       "question": "(a) (i) Write the principle of working of an ac generator. Draw its labelled diagram and explain its working. (ii) A resistor of 400 Ω, an inductor of 2 $\\pi$ H and a capacitor of 50 $\\pi \\mu$F are joined in series across an ac source v = 140 sin(100$\\pi$)t V. Find the rms voltages across these three circuit elements. The algebraic sum of these voltages is more than the rms voltage of source. Explain. OR (b) (i) Write the principle of working of a transformer. With the help of a labelled diagram, explain the working of a step-up transformer. (ii) An ideal transformer is designed to convert 50 V into 250 V. It draws 200 W power from an ac source whose instantaneous voltage is given by vi = 20 sin(100$\\pi$)t V. Find: (I) rms value of input current. (II) expression for instantaneous output voltage. (III) expression for instantaneous output current.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use $V_s/V_p = N_s/N_p$ (voltage ratio) and $I_pV_p = I_sV_s$ (power conservation for ideal transformer). Substitute given values to find the required quantity.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -2062,7 +2062,7 @@
       "marks": 1,
       "year": 2020,
       "question": "(a) Show that an ideal inductor does not dissipate power in an ac circuit. (b) The variation of inductive reactance ($X_{L}$) of an inductor with the frequency (f) of the ac source of 100 V and variable frequency is shown in the fig. (i) Calculate the self-inductance of the inductor. (ii) When this inductor is used in series with a capacitor of unknown value and a resistor of 10 Ωat 300 s-1, maximum power dissipation occurs in the circuit. Calculate the capacitance of the capacitor. OR (a) A conductor of length l is rotated about one of its ends at a constant angular speed $\\omega$ in a plane perpendicular to a uniform magnetic field B. Plot graphs to show variations of the emf induced across the ends of the conductor with (i) angular speed $\\omega$ and (ii) length of the conductor l. (b) Two concentric circular loops of radius 1 cm and 20 cm are placed coaxially. (i) Find mutual inductance of the arrangement. (ii) If the current passed through the outer loop is changed at a rate of 5 A/ms, find the emf induced in the inner loop. Assume the magnetic field on the inner loop to be uniform.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Average power $P = V_{rms}I_{rms}\\cos\\phi = I_{rms}^2 R$. Impedance $Z = \\sqrt{R^2+(X_L-X_C)^2}$; $I_{rms} = V_{rms}/Z$; $\\cos\\phi = R/Z$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -2128,7 +2128,7 @@
       "marks": 1,
       "year": 2019,
       "question": "(a) What do you understand by ’sharpness of resonance’ for a series LCR resonant circuit? How is it related with the quality factor ’Q’ of the circuit? Using the graphs given in the diagram, explain the factors which affect it. For which graph is the resistance (R) minimum? (b) A 2 $\\mu$F capacitor, 100 Ωresistor and 8 H inductor are connected in series with an ac source. Find the frequency of the ac source for which the current drawn in the circuit is maximum. If the peak value of emf of the source is 200 V, calculate the (i) maximum current, and (ii) inductive and capacitive reactance of the circuit at resonance. OR (a) Draw a schematic diagram of an ac generator. Explain its working and obtain the expression for the instantaneous value of the emf in terms of the magnetic field B, number of turns N of the coil of area A rotating with angular frequency $\\omega$. Show how an alternating emf is generated by a loop of wire rotating in a magnetic field. (b) A circular coil of radius 10 cm and 20 turns is rotated about its vertical diameter with angular speed of 50 rad s-1 in a uniform horizontal magnetic field of $3.0 \\times 10^{-2}$ T. (i) Calculate the maximum and average emf induced in the coil. (ii) If the coil forms a closed loop of resistance 10 Ω, calculate the maximum current in the coil and the average power loss due to Joule heating.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Average power $P = V_{rms}I_{rms}\\cos\\phi = I_{rms}^2 R$. Impedance $Z = \\sqrt{R^2+(X_L-X_C)^2}$; $I_{rms} = V_{rms}/Z$; $\\cos\\phi = R/Z$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -2370,7 +2370,7 @@
       "marks": 1,
       "year": 2026,
       "question": "In Bohr model of hydrogen atom, the electron makes a transition from n = 5 to n = 1 state. As a result, a photon of wavelength $\\lambda$ is emitted in the process. The wavelength of the photon emitted when an electron makes a transition from energy level n = 5 to n = 2 will be: (A) 8 7$\\lambda$ (B) 24 7 $\\lambda$ (C) 16 7 $\\lambda$ (D) 32 7 $\\lambda$",
-      "answer": "Refer to the official CBSE solved paper for this year. (Use $\\frac{1}{\\lambda'} = R_H(1/n_f^2-1/n_i^2)$; compare energy differences; the answer depends on specific transition stated.)",
+      "answer": "Refer to the official CBSE solved paper for this year. (Need the specific options for this transition comparison; use $E = 13.6(1/n_f^2-1/n_i^2)$ eV to compute wavelengths.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -2403,7 +2403,7 @@
       "marks": 1,
       "year": 2026,
       "question": "In Bohr model of hydrogen atom, an electron makes a transition from n = 4 state to n = 1 state and a photon of frequency $\\nu$ is emitted. The frequency of photon emitted when an electron makes a transition from n = 4 state to n = 2 state in the same model is: (A) $\\frac{\\nu}{3}$ (B) $\\frac{\\nu}{5}$ (C) $\\frac{\\nu}{4}$ (D) $\\frac{\\nu}{2}$",
-      "answer": "Refer to the official CBSE solved paper for this year. (Frequency of photon $\\nu \\propto \\Delta E$; $\\Delta E_{4\\to1} = 13.6(1-1/16) = 12.75$ eV; depends on specific transition in options.)",
+      "answer": "Refer to the official CBSE solved paper for this year. (Need options; $\\nu_{4\\to1}/\\nu_{other} = \\Delta E_{4\\to1}/\\Delta E_{other}$; compute using $E_n = -13.6/n^2$ eV.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -2689,7 +2689,7 @@
       "marks": 1,
       "year": 2024,
       "question": "Assertion (A): An alpha particle is moving towards a gold nucleus. The impact parameter is maximum for the scattering angle of 180◦. Reason (R): The impact parameter in an alpha particle scattering experiment does not depend upon the atomic number of the target nucleus. (A) Both Assertion (A) and Reason (R) are true and Reason (R) is correct explanation of Assertion (A). (B) Both Assertion (A) and Reason (R) are true and Reason (R) is not the correct explanation of Assertion (A). (C) Assertion (A) is true but Reason (R) is false. (D) Both Assertion (A) and Reason (R) are false.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "(D) Both Assertion and Reason are false — is correct. Impact parameter is maximum ($b = \\infty$) for zero scattering ($\\theta = 0°$), not $180°$. For $180°$, $b = 0$ (head-on).",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -2700,7 +2700,7 @@
       "marks": 1,
       "year": 2024,
       "question": "The energy of an electron in the ground state of hydrogen atom is -13.6 eV. The kinetic and potential energy of the electron in the first excited state will be: (A) -13.6 eV, 27.2 eV (B) -6.8 eV, 13.6 eV (C) 3.4 eV, -6.8 eV (D) 6.8 eV, -3.4 eV",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "(B) KE = 3.4 eV, PE = -6.8 eV — is correct. First excited state $n=2$: $E_2 = -3.4$ eV; $KE = -E = 3.4$ eV; $PE = 2E = -6.8$ eV.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -2711,7 +2711,7 @@
       "marks": 1,
       "year": 2023,
       "question": "The radius of the nth orbit in Bohr model of hydrogen atom is proportional to: (A) n (B) 1 n (C) $n_2$ (D) 1 $n_2$",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "(C) $n^2$ — is correct. $r_n = n^2 a_0 \\propto n^2$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -3426,7 +3426,7 @@
       "marks": 1,
       "year": 2026,
       "question": "Calculate the de Broglie wavelength associated with an electron revolving in the second excited state of hydrogen atom. The ground state energy of the hydrogen atom is -13·6 eV. Take me = $9 \\times 10^{-31}$ kg, h = 6·$6 \\times 10^{-34}$ J s.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "For particle of mass $m$ accelerated through potential $V$: $KE = eV = p^2/(2m)$; $p = \\sqrt{2meV}$; $\\lambda = h/p = h/\\sqrt{2meV}$. Substitute values.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -5241,7 +5241,7 @@
       "marks": 1,
       "year": 2015,
       "question": "Distinguish between emf and terminal voltage of a cell.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "EMF ($\\varepsilon$): total energy per unit charge supplied by cell (open circuit voltage). Terminal voltage ($V$): voltage across terminals when current flows. $V = \\varepsilon - Ir$ where $r$ = internal resistance.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -5912,7 +5912,7 @@
       "marks": 1,
       "year": 2020,
       "question": "A wire of length $L_1$ has a resistance $R_1$. It is gradually stretched till its length becomes 2L1. (a) Plot a graph showing variation of its resistance R with its length l during stretching. (b) What will be its resistance when its length becomes 2L1?",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Current Electricity.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -6187,7 +6187,7 @@
       "marks": 1,
       "year": 2008,
       "question": "The following graph shows the variation of terminal potential difference V , across a combination of three cells in series to a resistor, versus the current, i: (i) Calculate the emf of each cell. (ii) For what current I, will the power dissipation of the circuit be maximum?",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Average power $P = V_{rms}I_{rms}\\cos\\phi = I_{rms}^2 R$. Impedance $Z = \\sqrt{R^2+(X_L-X_C)^2}$; $I_{rms} = V_{rms}/Z$; $\\cos\\phi = R/Z$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -6627,7 +6627,7 @@
       "marks": 1,
       "year": 2020,
       "question": "(a) Differentiate between the random velocity and the drift velocity of electrons in an electrical conductor. Give their order of magnitudes. (b) A conductor of uniform cross-sectional area is connected across a dc source of variable voltage. Draw a graph showing variation of drift velocity of electrons (vd) as a function of current density (J) in it.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Current Electricity.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -6770,7 +6770,7 @@
       "marks": 1,
       "year": 2019,
       "question": "(a) Draw a graph showing the variation of current versus voltage in an electrolyte when an external resistance is also connected. (b) (i) The graph between resistance (R) and temperature (T) for Hg is shown in figure (a). Explain the behaviour of Hg near 4 K. (ii) In which region of the graph shown in figure (b) is the resistance negative and why?",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Current Electricity.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -6869,7 +6869,7 @@
       "marks": 1,
       "year": 2013,
       "question": "Define the term ’resistivity’ and ’conductivity’ and state their S.I. unit. Draw a graph showing the variation of resistivity with temperature for a typical semiconductor.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Current Electricity.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -8134,7 +8134,7 @@
       "marks": 1,
       "year": 2021,
       "question": "An electron is accelerated through a potential difference of 100 V. Calculate the de Broglie wavelength associated with it.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "For particle of mass $m$ accelerated through potential $V$: $KE = eV = p^2/(2m)$; $p = \\sqrt{2meV}$; $\\lambda = h/p = h/\\sqrt{2meV}$. Substitute values.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -8145,7 +8145,7 @@
       "marks": 1,
       "year": 2021,
       "question": "A proton and a deuteron are moving with the same speed. Find the ratio of the de Broglie wavelength ($\\lambda$p/$\\lambda$d) associated with them.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "For particle of mass $m$ accelerated through potential $V$: $KE = eV = p^2/(2m)$; $p = \\sqrt{2meV}$; $\\lambda = h/p = h/\\sqrt{2meV}$. Substitute values.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -8167,7 +8167,7 @@
       "marks": 1,
       "year": 2020,
       "question": "A proton and an electron have equal speeds. Find the ratio of de Broglie wavelengths associated with them.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "For particle of mass $m$ accelerated through potential $V$: $KE = eV = p^2/(2m)$; $p = \\sqrt{2meV}$; $\\lambda = h/p = h/\\sqrt{2meV}$. Substitute values.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -8343,7 +8343,7 @@
       "marks": 1,
       "year": 2019,
       "question": "Plot a graph showing the variation of photoelectric current versus intensity of light.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Dual Nature of Radiation and Matter.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -8365,7 +8365,7 @@
       "marks": 1,
       "year": 2019,
       "question": "Plot a graph of the de-Broglie wavelength associated with a proton versus its momentum.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Dual Nature of Radiation and Matter.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -8376,7 +8376,7 @@
       "marks": 1,
       "year": 2019,
       "question": "Plot a graph of the de-Broglie wavelength associated with electron as a function of accelerating potential.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Dual Nature of Radiation and Matter.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -8585,7 +8585,7 @@
       "marks": 1,
       "year": 2026,
       "question": "Find the ratio $\\lambda\\alpha \\lambda$p of de Broglie wavelength $\\lambda\\alpha$ associated with an alpha particle to de Broglie wavelength $\\lambda$p associated with a proton if both are moving with the (a) same velocity (b) same kinetic energy.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "For particle of mass $m$ accelerated through potential $V$: $KE = eV = p^2/(2m)$; $p = \\sqrt{2meV}$; $\\lambda = h/p = h/\\sqrt{2meV}$. Substitute values.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -8607,7 +8607,7 @@
       "marks": 1,
       "year": 2026,
       "question": "Find the ratio ($\\lambda\\alpha$/$\\lambda$p) of the de Broglie wavelengths $\\lambda\\alpha$ and $\\lambda$p associated respectively with an alpha particle and a proton: (i) if they are moving with the same kinetic energy. (ii) just after they are accelerated through the same potential difference.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "For particle of mass $m$ accelerated through potential $V$: $KE = eV = p^2/(2m)$; $p = \\sqrt{2meV}$; $\\lambda = h/p = h/\\sqrt{2meV}$. Substitute values.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -8618,7 +8618,7 @@
       "marks": 1,
       "year": 2026,
       "question": "A particle of mass M at rest splits up into two particles of masses m1 and m2 having non-zero velocities. Calculate the ratio of the de Broglie wavelengths associated with the two particles.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "For particle of mass $m$ accelerated through potential $V$: $KE = eV = p^2/(2m)$; $p = \\sqrt{2meV}$; $\\lambda = h/p = h/\\sqrt{2meV}$. Substitute values.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -8629,7 +8629,7 @@
       "marks": 1,
       "year": 2026,
       "question": "Calculate the de Broglie wavelength of a neutron having kinetic energy of 150 eV.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "For particle of mass $m$ accelerated through potential $V$: $KE = eV = p^2/(2m)$; $p = \\sqrt{2meV}$; $\\lambda = h/p = h/\\sqrt{2meV}$. Substitute values.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -8860,7 +8860,7 @@
       "marks": 1,
       "year": 2022,
       "question": "What are matter waves? A proton and an alpha particle are accelerated through the same potential difference. Find the ratio of the de Broglie wavelength associated with the proton to that with the alpha particle.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "For particle of mass $m$ accelerated through potential $V$: $KE = eV = p^2/(2m)$; $p = \\sqrt{2meV}$; $\\lambda = h/p = h/\\sqrt{2meV}$. Substitute values.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -8992,7 +8992,7 @@
       "marks": 1,
       "year": 2019,
       "question": "Plot a graph showing variation of de Broglie wavelength ($\\lambda$) associated with a charged particle of mass m, versus $\\frac{1}{\\sqrt{V}}$ , where V is the potential difference through which the particle is accelerated. How does this graph give us the information regarding the magnitude of the charge of the particle?",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Dual Nature of Radiation and Matter.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -9036,7 +9036,7 @@
       "marks": 1,
       "year": 2019,
       "question": "Plot a graph of photocurrent versus anode potential for a radiation of frequency $\\nu$ and intensities I1 and I2 (I1 < I2).",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Dual Nature of Radiation and Matter.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -9168,7 +9168,7 @@
       "marks": 1,
       "year": 2012,
       "question": "An $\\alpha$-particle and a proton are accelerated from rest by the same potential. Find the ratio of their de Broglie wavelengths.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "For particle of mass $m$ accelerated through potential $V$: $KE = eV = p^2/(2m)$; $p = \\sqrt{2meV}$; $\\lambda = h/p = h/\\sqrt{2meV}$. Substitute values.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -9234,7 +9234,7 @@
       "marks": 1,
       "year": 2026,
       "question": "(b) Plot a graph for a particle of charge q and mass m showing variation of de Broglie wavelength $\\lambda$, as 1 $\\lambda$ with $\\sqrt{V}$ , where V is the potential difference through which the particle is accelerated.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Dual Nature of Radiation and Matter.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -9366,7 +9366,7 @@
       "marks": 1,
       "year": 2024,
       "question": "(a) Briefly explain de Broglie hypothesis for wave nature of matter. (b) Find the ratio of de Broglie wavelength associated with a proton and an alpha particle when both are (i) accelerated from rest through the same potential difference, and (ii) moving with the same kinetic energy.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "For particle of mass $m$ accelerated through potential $V$: $KE = eV = p^2/(2m)$; $p = \\sqrt{2meV}$; $\\lambda = h/p = h/\\sqrt{2meV}$. Substitute values.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -9432,7 +9432,7 @@
       "marks": 1,
       "year": 2023,
       "question": "A particle is associated with a de Broglie wave of wavelength 1.2 nm. The kinetic energy of the particle is made four times. Calculate the new value of the wavelength of the wave.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "For particle of mass $m$ accelerated through potential $V$: $KE = eV = p^2/(2m)$; $p = \\sqrt{2meV}$; $\\lambda = h/p = h/\\sqrt{2meV}$. Substitute values.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -9443,7 +9443,7 @@
       "marks": 1,
       "year": 2023,
       "question": "Calculate the wavelength of de Broglie waves associated with a proton having 500 1.673 eV energy. How will the wavelength be affected for an alpha particle having the same energy?",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "For particle of mass $m$ accelerated through potential $V$: $KE = eV = p^2/(2m)$; $p = \\sqrt{2meV}$; $\\lambda = h/p = h/\\sqrt{2meV}$. Substitute values.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -9454,7 +9454,7 @@
       "marks": 1,
       "year": 2023,
       "question": "(a) A particle of mass m and charge q is accelerated through a potential difference V . Plot a graph of de Broglie wavelength $\\lambda$ associated with it as a function of V . (b) Calculate the energy acquired by, and de Broglie wavelength associated with, an electron accelerated through a potential difference of 400 V.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "For particle of mass $m$ accelerated through potential $V$: $KE = eV = p^2/(2m)$; $p = \\sqrt{2meV}$; $\\lambda = h/p = h/\\sqrt{2meV}$. Substitute values.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -9465,7 +9465,7 @@
       "marks": 1,
       "year": 2023,
       "question": "(a) The figure shows de Broglie wavelength ($\\lambda$) for two particles A and B having same charges but different masses as a function of $\\frac{1}{\\sqrt{V}}$ , where V is the potential through which the particles are accelerated. (i) Which of them is heavier and why? (ii) What does the slope of the line represent? (b) Calculate the momentum of an electron having de Broglie wavelength of 3.0 Å.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "For particle of mass $m$ accelerated through potential $V$: $KE = eV = p^2/(2m)$; $p = \\sqrt{2meV}$; $\\lambda = h/p = h/\\sqrt{2meV}$. Substitute values.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -9509,7 +9509,7 @@
       "marks": 1,
       "year": 2022,
       "question": "Find the ratio of the de Broglie wavelengths associated with an alpha particle and a proton, if both (a) have the same speeds, (b) have the same kinetic energy, (c) are accelerated through the same potential difference.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "For particle of mass $m$ accelerated through potential $V$: $KE = eV = p^2/(2m)$; $p = \\sqrt{2meV}$; $\\lambda = h/p = h/\\sqrt{2meV}$. Substitute values.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -9575,7 +9575,7 @@
       "marks": 1,
       "year": 2022,
       "question": "A proton is accelerated through a potential difference V . After acceleration, the de Broglie wavelength associated with it is $\\lambda$. If the proton is replaced by an alpha particle, then find the de Broglie wavelength associated with it if it were accelerated through the same potential difference V . What will be the momentum of the alpha particle?",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "For particle of mass $m$ accelerated through potential $V$: $KE = eV = p^2/(2m)$; $p = \\sqrt{2meV}$; $\\lambda = h/p = h/\\sqrt{2meV}$. Substitute values.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -9806,7 +9806,7 @@
       "marks": 1,
       "year": 2016,
       "question": "(a) Define the term ’intensity of radiation’ in photon picture. (b) Plot a graph showing the variation of photo current vs collector potential for three different intensities I1 > I2 > I3, two of which (I1 and I2) have the same frequency $\\nu$ and the third has frequency $\\nu$1 > $\\nu$. (c) Explain the nature of the curves on the basis of Einstein’s equation.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Dual Nature of Radiation and Matter.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -11027,7 +11027,7 @@
       "marks": 1,
       "year": 2011,
       "question": "Plot a graph showing the variation of coulomb force (F) versus 1 $r_2$ , where r is the distance between the two charges of each pair of charges: (1 $\\mu$C, 2 $\\mu$C) and (2 $\\mu$C, -3 $\\mu$C). Interpret the graphs obtained.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Electric Charges and Fields.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -12798,7 +12798,7 @@
       "marks": 1,
       "year": 2013,
       "question": "Figure shows a bar magnet M falling under gravity through an air cored coil C. Plot a graph showing variation of induced e.m.f. (E) with time (t). What does the area enclosed by the E–t curve depict?",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Electromagnetic Induction.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -13557,7 +13557,7 @@
       "marks": 1,
       "year": 2025,
       "question": "(a) (i) State Lenz’s law and explain how this law is a consequence of conservation of energy principle. (ii) A square shaped loop of side ℓis initially lying outside a region of uniform magnetic field ⃗B as shown in the figure. The loop is moved towards right with a constant velocity v till it goes out of the region of magnetic field. (I) What will be the directions of induced current when the loop enters the field and when it leaves the field ? (II) Draw the plots showing the variation of magnetic flux ϕ linked with the loop with time t and variation of induced emf E with time t. Mark the relevant values of E, ϕ and t on the graphs. OR (b) (i) Differentiate between peak and rms values of alternating current. How are they related ? (ii) A current element X is connected across an ac source of emf V = $V_0$ sin 2$\\pi\\nu$t. It is found that the voltage leads the current in phase by $\\frac{\\pi}{2}$ radian. If element X was replaced by element Y , the voltage lags behind the current in phase by $\\frac{\\pi}{2}$ radian. (I) Identify elements X and Y by drawing phasor diagrams. (II) Obtain the condition of resonance when both elements X and Y are connected in series to the source and obtain expression for resonant frequency. What is the impedance value in this case ?",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "At resonance in series LCR circuit, impedance $Z = R$ (minimum value). Since $X_L = X_C$, the reactive parts cancel: $Z = \\sqrt{R^2+(X_L-X_C)^2} = R$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -13898,7 +13898,7 @@
       "marks": 1,
       "year": 2026,
       "question": "A plane electromagnetic wave travels through a medium and the magnetic field associated with it is given by B = $5 \\times 10^{-8}$ sin($3 \\times 10^{10}$ t -150 x) T, where x is in metres and t is in seconds. The velocity of the wave is: (A) 2·$0 \\times 10^{8}$ m s-1 (B) 4·$5 \\times 10^{7}$ m s-1 (C) 3·$5 \\times 10^{7}$ m s-1 (D) 2·$5 \\times 10^{8}$ m s-1",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "(B) $v = c/n = 1/\\sqrt{\\mu\\epsilon}$ — is correct. Speed of EM wave in medium: $v = c/n = 1/\\sqrt{\\mu\\epsilon} = c/\\sqrt{\\mu_r\\epsilon_r}$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -15174,7 +15174,7 @@
       "marks": 1,
       "year": 2026,
       "question": "What is displacement current (id)? Considering the case of charging of a capacitor, show that id = $\\varepsilon$0 d$\\Phi$E dt . What is the value of id for a conductor across which a constant voltage is applied?",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Displacement current $I_d = \\epsilon_0 d\\Phi_E/dt$ — Maxwell's addition to Ampere's law. Exists in region of changing electric flux (e.g., between capacitor plates). Maintains current continuity.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -15339,7 +15339,7 @@
       "marks": 1,
       "year": 2024,
       "question": "What is meant by displacement current? How is this current different from the conduction current? A capacitor is being charged by a source of emf. Justify the continuity of current in the circuit.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Displacement current $I_d = \\epsilon_0 d\\Phi_E/dt$ — Maxwell's addition to Ampere's law. Exists in region of changing electric flux (e.g., between capacitor plates). Maintains current continuity.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -16197,7 +16197,7 @@
       "marks": 1,
       "year": 2025,
       "question": "The electric field (E) and electric potential (V ) at a point inside a charged hollow metallic sphere are respectively: (A) E = 0, V = 0 (B) E = 0, V = $V_0$ (a constant) (C) E ̸= 0, V ̸= 0 (D) E = $E_0$ (a constant), V = 0",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "(A) zero — is correct. Inside hollow spherical shell: Gauss's law gives $E = 0$ (no enclosed charge).",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -21477,7 +21477,7 @@
       "marks": 1,
       "year": 2023,
       "question": "(a) (i) Write the principle and explain the working of a moving coil galvanometer. A galvanometer as such cannot be used to measure the current in a circuit. Why? (ii) Why is the magnetic field made radial in a moving coil galvanometer? How is it achieved? OR (b) (i) Derive an expression for magnetic field on the axis of a current-carrying circular loop. (ii) Write any two points of difference between a diamagnetic and a paramagnetic substance.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Diamagnetic: $\\chi < 0$ (weakly repelled), e.g., Cu, Bi. Paramagnetic: small $+\\chi$ (weakly attracted), e.g., Al, $O_2$. Ferromagnetic: very large $+\\chi$, domain structure, e.g., Fe, Ni, Co.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -22291,7 +22291,7 @@
       "marks": 1,
       "year": 2024,
       "question": "The carbon isotope ${}^{12}_{6}\\text{C}$ has a nuclear mass of 12.000000 u. Calculate the binding energy of its nucleus. Given mp = 1.007825 u; mn = 1.008665 u.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Mass defect $\\Delta m = Zm_p + Nm_n - M_{atom}$ (use atomic masses). $BE = \\Delta m \\times 931.5$ MeV. $BE/A =$ BE divided by mass number.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -22368,7 +22368,7 @@
       "marks": 1,
       "year": 2022,
       "question": "(i) Distinguish between isotopes and isobars. (ii) Two nuclei have different mass numbers A1 and A2. Are these nuclei necessarily the isotopes of the same element? Explain.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Isotopes: same $Z$ (protons), different $A$ (mass number), same chemical properties. Isobars: same $A$, different $Z$, different elements. Isotones: same $N$ (neutrons), different $Z$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -22566,7 +22566,7 @@
       "marks": 1,
       "year": 2009,
       "question": "(a) The mass of a nucleus in its ground state is always less than the total mass of its constituents - neutrons and protons. Explain. (b) Plot a graph showing the variation of potential energy of a pair of nucleons as a function of their separation.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Nuclei.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -22621,7 +22621,7 @@
       "marks": 1,
       "year": 2007,
       "question": "Draw a graph showing the variation of potential energy between a pair of nucleons as a function of their separation. Indicate the regions in which the nuclear force is (i) attractive, (ii) repulsive.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Nuclei.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -22709,7 +22709,7 @@
       "marks": 1,
       "year": 2026,
       "question": "(a) Distinguish between isotopes and isobars, giving one example for each. (b) Derive the relation between atomic mass unit (u) and electron volt (eV).",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Isotopes: same $Z$ (protons), different $A$ (mass number), same chemical properties. Isobars: same $A$, different $Z$, different elements. Isotones: same $N$ (neutrons), different $Z$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -22819,7 +22819,7 @@
       "marks": 1,
       "year": 2024,
       "question": "(a) Plot a graph depicting potential energy of a pair of nucleons in a nucleus as a function of their separation. (b) Identify the regions where the nuclear force is (i) attractive, and (ii) repulsive. Justify your answer.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Nuclei.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -22896,7 +22896,7 @@
       "marks": 1,
       "year": 2023,
       "question": "(a) (i) Prove that the nuclear density is same for all nuclei. (ii) Draw a plot of potential energy of a pair of nucleons as a function of their separation. Draw two inferences from this plot. OR (b) (i) Draw a graph to show the variation of the number of scattered particles detected (N) in Geiger-Marsden experiment as a function of scattering angle ($\\theta$). (ii) Discuss briefly two conclusions that can be drawn from this graph and how they lead to the discovery of nucleus in an atom.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Nuclei.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -23105,7 +23105,7 @@
       "marks": 1,
       "year": 2019,
       "question": "(a) Plot a graph showing the variation of potential energy of a pair of nucleons as a function of their separation. Also indicate the regions where the force is (i) attractive and (ii) repulsive. (b) Write two characteristic properties of nuclear force.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Nuclei.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -23127,7 +23127,7 @@
       "marks": 1,
       "year": 2019,
       "question": "(a) Distinguish between isotopes and isobars, giving one example for each. (b) Why is the mass of a nucleus always less than the sum of the masses of its constituents? Write one example to justify your answer. OR (a) Classify the following six nuclides into (i) isotones, (ii) isotopes, and (iii) isobars: ${}^{12}_{6}\\text{C}$, 3 2He, ${}^{198}_{80}\\text{Hg}$, 3 1H, ${}^{197}_{79}\\text{Au}$, ${}^{14}_{6}\\text{C}$. (b) How does the size of a nucleus depend on its mass number? Hence explain why the density of nuclear matter should be independent of the size of the nucleus.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Isotopes: same $Z$ (protons), different $A$ (mass number), same chemical properties. Isobars: same $A$, different $Z$, different elements. Isotones: same $N$ (neutrons), different $Z$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -23325,7 +23325,7 @@
       "marks": 1,
       "year": 2011,
       "question": "State the law of radioactive decay. Plot a graph showing the number (N) of undecayed nuclei as a function of time (t) for a given radioactive sample having half life T1/2. Depict in the plot the number of undecayed nuclei at (i) t = 3T1/2 and (ii) t = 5T1/2.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Nuclei.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -23336,7 +23336,7 @@
       "marks": 1,
       "year": 2010,
       "question": "(i) Define ’activity’ of a radioactive material and write its S.I. unit. (ii) Plot a graph showing variation of activity of a given radioactive sample with time. (iii) The sequence of stepwise decay of a radioactive nucleus is D $\\alpha$-$\\rightarrow$D1 $\\beta$- -$\\rightarrow$D2 If the atomic number and mass number of D2 are 71 and 176 respectively, what are their corresponding values for D?",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Nuclei.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -23358,7 +23358,7 @@
       "marks": 1,
       "year": 2008,
       "question": "Distinguish between isotopes and isobars. Give one example for each species. A radioac- tive isotope has a half-life of 5 years. How long will it take the activity to reduce to 3.125%?",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Isotopes: same $Z$ (protons), different $A$ (mass number), same chemical properties. Isobars: same $A$, different $Z$, different elements. Isotones: same $N$ (neutrons), different $Z$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -23424,7 +23424,7 @@
       "marks": 1,
       "year": 2005,
       "question": "(a) Draw a graph showing the variation of potential energy of a pair of nucleons as a function of their separation. Indicate the regions in which nuclear force is (i) attractive, and (ii) repulsive. (b) Write two characteristic features of nuclear force which distinguish it from the coulomb force.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Nuclei.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -23963,7 +23963,7 @@
       "marks": 1,
       "year": 2024,
       "question": "Assertion (A): Plane and convex mirrors cannot produce real images under any circum- stance. Reason (R): A virtual image cannot serve as an object to produce a real image. (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A). (B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A). (C) Assertion (A) is true, but Reason (R) is false. (D) Assertion (A) is false and Reason (R) is also false.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "(A) Both true and R explains A — is correct. Convex mirror: center of curvature on same side as incoming light; all images virtual, erect, diminished.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -24755,7 +24755,7 @@
       "marks": 1,
       "year": 2026,
       "question": "A 5 cm long pencil is placed along the principal axis of a concave mirror of focal length 20 cm such that its nearest end is at a distance of 25 cm from the mirror. Calculate the length of the image of the pencil.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use mirror formula $1/v + 1/u = 1/f = 2/R$ with sign convention. Magnification $m = -v/u$. Focal length = half the radius of curvature for spherical mirror.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -24810,7 +24810,7 @@
       "marks": 1,
       "year": 2026,
       "question": "A concave mirror of radius of curvature 16 cm produces two-times enlarged real image of an object kept in front of it. Find the position of the object.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use mirror formula $1/v + 1/u = 1/f = 2/R$ with sign convention. Magnification $m = -v/u$. Focal length = half the radius of curvature for spherical mirror.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -25052,7 +25052,7 @@
       "marks": 1,
       "year": 2024,
       "question": "An object is placed 30 cm in front of a concave mirror of radius of curvature 40 cm. Find the (i) position of the image formed and (ii) magnification of the image.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use mirror formula $1/v + 1/u = 1/f = 2/R$ with sign convention. Magnification $m = -v/u$. Focal length = half the radius of curvature for spherical mirror.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -25162,7 +25162,7 @@
       "marks": 1,
       "year": 2024,
       "question": "The radius of curvature of a convex mirror is 30 cm. It forms an image of an object which is half the size of the object. Find the separation between the object and the image.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use mirror formula $1/v + 1/u = 1/f = 2/R$ with sign convention. Magnification $m = -v/u$. Focal length = half the radius of curvature for spherical mirror.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -25272,7 +25272,7 @@
       "marks": 1,
       "year": 2023,
       "question": "The refractive indices of two media A and B are 2 $\\frac{and}{\\sqrt{2}}$ respectively. What is the critical angle for their interface?",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Critical angle $C$ is the angle of incidence in the denser medium at which the refracted ray just grazes the interface ($r = 90°$). $\\sin C = n_2/n_1$ (for ray from medium $n_1$ to $n_2 < n_1$).",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -25316,7 +25316,7 @@
       "marks": 1,
       "year": 2020,
       "question": "An object is kept 20 cm in front of a concave mirror of radius of curvature 60 cm. Find the nature and position of the image formed.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use mirror formula $1/v + 1/u = 1/f = 2/R$ with sign convention. Magnification $m = -v/u$. Focal length = half the radius of curvature for spherical mirror.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -25668,7 +25668,7 @@
       "marks": 1,
       "year": 2011,
       "question": "Two convex lenses of same focal length but of aperture A1 and A2 (A1 < A2), are used as the objective lenses in two astronomical telescopes having identical eyepieces. What is the ratio of their resolving power? Which telescope will you prefer and why? Give reason.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Resolving power: ability to distinguish two closely spaced objects or spectral lines. For telescope: $R = D/(1.22\\lambda)$; for microscope: $R = 2n\\sin\\theta/\\lambda$. Smaller Rayleigh limit = better resolution.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -25701,7 +25701,7 @@
       "marks": 1,
       "year": 2009,
       "question": "Define refractive index of a transparent medium. A ray of light passes through a triangular prism. Plot a graph showing the variation of the angle of deviation with the angle of incidence.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Ray Optics and Optical Instruments.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -25943,7 +25943,7 @@
       "marks": 1,
       "year": 2025,
       "question": "(a) A concave mirror has radius of curvature 20 cm. Calculate the distance of an object from the mirror so as to form an image of magnification -2. Also find the location of the image. (b) If the silver coating around the centre of a concave mirror is removed, will the mirror still form the image of an object? Justify your answer.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use mirror formula $1/v + 1/u = 1/f = 2/R$ with sign convention. Magnification $m = -v/u$. Focal length = half the radius of curvature for spherical mirror.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -26284,7 +26284,7 @@
       "marks": 1,
       "year": 2020,
       "question": "An object is placed in front of a concave mirror of focal length 12 cm. There are two possible positions of the object for which the image formed is three times the size of the object. (a) Draw the ray diagram for each case, and (b) Find the distance between the two positions of the object.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use mirror formula $1/v + 1/u = 1/f = 2/R$ with sign convention. Magnification $m = -v/u$. Focal length = half the radius of curvature for spherical mirror.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -26867,7 +26867,7 @@
       "marks": 1,
       "year": 2025,
       "question": "(i) A thin pencil of length (f/4) is placed coinciding with the principal axis of a mirror of focal length f. The image of the pencil is real and enlarged, just touches the pencil. Calculate the magnification produced by the mirror. (ii) A ray of light is incident on a refracting face AB of a prism ABC at an angle of 45◦. The ray emerges from face AC and the angle of deviation is 15◦. The angle of prism is 30◦. Show that the emergent ray is normal to the face AC from which it emerges out. Find the refraction index of the material of the prism.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use mirror formula $1/v + 1/u = 1/f = 2/R$ with sign convention. Magnification $m = -v/u$. Focal length = half the radius of curvature for spherical mirror.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -26889,7 +26889,7 @@
       "marks": 1,
       "year": 2025,
       "question": "(a) (i) Draw a ray diagram of a reflecting telescope (Cassegrain) and explain the for- mation of image. State two important advantages that a reflecting telescope has over a refracting telescope. (ii) In a refracting telescope, the focal length of the objective is 50 times the focal length of the eyepiece. When the final image is formed at infinity, the length of the tube is 102 cm. Find the focal lengths of the two lenses. OR (b) (i) Write any two advantages of a compound microscope over a simple microscope. Draw a ray diagram for the image formation at the near point by a compound microscope and explain it. (ii) A thin planoconcave lens with its curved face of radius of curvature R is made of glass of refractive index $n_1$. It is placed coaxially in contact with a thin equiconvex lens of same radius of curvature of refractive index $n_2$. Obtain the power of the combination lens.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use lens formula $1/v - 1/u = 1/f$ with sign convention (distances measured from optical centre; real positive/negative as per convention). Magnification $m = v/u$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -26977,7 +26977,7 @@
       "marks": 1,
       "year": 2023,
       "question": "(a) (i) Draw a ray diagram to show how the final image is formed at infinity in an astronomical refracting telescope. Obtain an expression for its magnifying power. (ii) Two thin lenses $L_1$ and $L_2$, $L_1$ being a convex lens of focal length 24 cm and $L_2$ a concave lens of focal length 18 cm are placed coaxially at a separation of 45 cm. A 1 cm tall object is placed in front of the lens $L_1$ at a distance of 36 cm. Find the location and height of the image formed by the combination. OR (b) (i) Explain the working principle of an optical fibre with the help of a diagram. Mention one use of a light pipe. (ii) A ray of light is incident at an angle of 60◦on one face of a prism with the prism angle A = 60◦. The ray passes symmetrically through the prism. Find the angle of minimum deviation ($\\delta$m) and refractive index of the material of the prism. If the prism is immersed in water, how will $\\delta$m be affected? Justify your answer.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use lens formula $1/v - 1/u = 1/f$ with sign convention (distances measured from optical centre; real positive/negative as per convention). Magnification $m = v/u$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -27032,7 +27032,7 @@
       "marks": 1,
       "year": 2021,
       "question": "(i) Draw a ray diagram of an astronomical refracting telescope in normal adjustment. Obtain an expression for its magnifying power. How can we increase the magnifying power of the telescope? (ii) A beam of light converges at a point P. A lens is placed in the path of the beam at a distance of 25 cm from P. The final image is formed at infinity. Calculate the power of the lens.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use lens formula $1/v - 1/u = 1/f$ with sign convention (distances measured from optical centre; real positive/negative as per convention). Magnification $m = v/u$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -27153,7 +27153,7 @@
       "marks": 1,
       "year": 2019,
       "question": "(a) Using the ray diagram for a system of two lenses of focal lengths f1 and f2 in contact with each other, show that the two lens system can be regarded as equivalent to a single lens of focal length f, where 1 f = 1 f1 + 1 f2 . Also write the relation for the equivalent power of the lens combination. (b) Determine the position of the image formed by the lens combination given in the figure. OR (a) Explain, using a suitable diagram, how unpolarized light gets linearly polarized by scattering. (b) Describe briefly the variation of the intensity of transmitted light when a polaroid sheet kept between two crossed polaroids is rotated. Draw the graph depicting the variation of intensity with the angle of rotation. How many maxima and minima would be observed when $\\theta$ varies from 0 to $\\pi$?",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use lens formula $1/v - 1/u = 1/f$ with sign convention (distances measured from optical centre; real positive/negative as per convention). Magnification $m = v/u$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -27164,7 +27164,7 @@
       "marks": 1,
       "year": 2019,
       "question": "(a) Draw a labelled ray diagram of compound microscope, when final image forms at the least distance of distinct vision. (b) Why is its objective of short focal length and of short aperture, compared to its eyepiece? Explain. (c) The focal length of the objective is 4 cm while that of eyepiece is 10 cm. The object is placed at a distance of 6 cm from the objective lens. (i) Calculate the magnifying power of the compound microscope, if its final image is formed at the near point. (ii) Also calculate length of the compound microscope. OR (a) With the help of a labelled ray diagram, explain the construction and working of a Cassegrain reflecting telescope. (b) An amateur astronomer wishes to estimate roughly the size of the Sun using his crude telescope consisting of an objective lens of focal length 200 cm and an eyepiece of focal length 10 cm. By adjusting the distance of the eyepiece from the objective, he obtains an image of the Sun on a screen 40 cm behind the eyepiece. The diameter of the Sun’s image is measured to be 6.0 cm. Estimate the Sun’s size, given that the average Earth-Sun distance is $1.5 \\times 10^{11}$ m.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use lens formula $1/v - 1/u = 1/f$ with sign convention (distances measured from optical centre; real positive/negative as per convention). Magnification $m = v/u$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -27197,7 +27197,7 @@
       "marks": 1,
       "year": 2017,
       "question": "(a) Draw a ray diagram to show the image formation by a combination of two thin convex lenses in contact. Obtain the expression for the power of this combination in terms of the focal lengths of the lenses. (b) A ray of light passing from air through an equilateral glass prism undergoes minimum deviation when the angle of incidence is 3 4th of the angle of prism. Calculate the speed of light in the prism.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use lens formula $1/v - 1/u = 1/f$ with sign convention (distances measured from optical centre; real positive/negative as per convention). Magnification $m = v/u$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -27219,7 +27219,7 @@
       "marks": 1,
       "year": 2015,
       "question": "A biconvex lens with its two faces of equal radius of curvature R is made of a transparent medium of refractive index $\\mu$1. It is kept in contact with a medium of refractive index $\\mu$2 as shown in the figure. (a) Find the equivalent focal length of the combination. (b) Obtain the condition when this combination acts as a diverging lens. (c) Draw the ray diagram for the case $\\mu$2 > ($\\mu$1 + 1)/2, when the object is kept far away from the lens. Point out the nature of the image formed by the system.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use lens formula $1/v - 1/u = 1/f$ with sign convention (distances measured from optical centre; real positive/negative as per convention). Magnification $m = v/u$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -27329,7 +27329,7 @@
       "marks": 1,
       "year": 2009,
       "question": "(a) (i) Draw a labelled ray diagram to show the formation of image in an astronomical telescope for a distant object. (ii) Write three distinct advantages of a reflecting type telescope over a refracting type telescope. (b) A convex lens of focal length 10 cm is placed coaxially 5 cm away from a concave lens of focal length 10 cm. If an object is placed 30 cm in front of the convex lens, find the position of the final image formed by the combined system.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use lens formula $1/v - 1/u = 1/f$ with sign convention (distances measured from optical centre; real positive/negative as per convention). Magnification $m = v/u$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -27362,7 +27362,7 @@
       "marks": 1,
       "year": 2008,
       "question": "Draw a labeled ray diagram of a compound microscope and write an expression for its magnifying power. The focal lengths of the objective and eye-lens of a compound microscope are 2 cm, 6.25 cm respectively. The distance between the lenses is 15 cm. (i) How far from the objective lens will the object be kept, so as to obtain the final image at the near point of the eye? (ii) Also calculate its magnifying power.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use lens formula $1/v - 1/u = 1/f$ with sign convention (distances measured from optical centre; real positive/negative as per convention). Magnification $m = v/u$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -28363,7 +28363,7 @@
       "marks": 1,
       "year": 2014,
       "question": "Plot a graph showing variation of current versus voltage for the material GaAs.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Semiconductor Electronics.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -28605,7 +28605,7 @@
       "marks": 1,
       "year": 2024,
       "question": "Plot a graph showing the variation of current with voltage for the material GaAs. On the graph, mark the region where: (a) resistance is negative, and (b) Ohm’s law is obeyed.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Semiconductor Electronics.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -29276,7 +29276,7 @@
       "marks": 1,
       "year": 2011,
       "question": "Plot a graph showing temperature dependence of resistivity for a typical semiconductor. How is this behaviour explained?",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Semiconductor Electronics.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -29727,7 +29727,7 @@
       "marks": 1,
       "year": 2020,
       "question": "(a) Plot V-I characteristics for an illuminated photodiode under reverse bias for three different illumination intensities I1 > I2 > I3. (b) In a zener regulated power supply, a zener diode with VZ = 6 V is used for regulation. The load current should be 4.0 mA and zener current is five times the load current for unregulated input of 10 V. Find the series resistor Rs used in the power supply.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Average power $P = V_{rms}I_{rms}\\cos\\phi = I_{rms}^2 R$. Impedance $Z = \\sqrt{R^2+(X_L-X_C)^2}$; $I_{rms} = V_{rms}/Z$; $\\cos\\phi = R/Z$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -30893,7 +30893,7 @@
       "marks": 1,
       "year": 2026,
       "question": "Assertion (A): Light added to light can produce darkness. Reason (R): When two coherent light waves interfere, there is darkness at position of destructive interference. (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A). (B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of Assertion (A). (C) Assertion (A) is true, but Reason (R) is false. (D) Assertion (A) is false and Reason (R) is also false.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "(A) Both true and R explains A — is correct. Sustained interference requires coherent sources; incoherent sources give rapidly changing phases averaging to uniform illumination.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -31102,7 +31102,7 @@
       "marks": 1,
       "year": 2024,
       "question": "Assertion (A): In a Young’s double-slit experiment, interference pattern is not observed when two coherent sources are infinitely close to each other. Reason (R): The fringe width is proportional to the separation between the two sources. (A) Both Assertion (A) and Reason (R) are true and Reason (R) is correct explanation of Assertion (A). (B) Both Assertion (A) and Reason (R) are true and Reason (R) is not the correct explanation of Assertion (A). (C) Assertion (A) is true but Reason (R) is false. (D) Both Assertion (A) and Reason (R) are false.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "(A) Both true and R explains A — is correct. Sustained interference requires coherent sources; incoherent sources give rapidly changing phases averaging to uniform illumination.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -31432,7 +31432,7 @@
       "marks": 1,
       "year": 2016,
       "question": "Why does sun appear red at sunrise and sunset?",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Sun appears red/orange at sunset: sunlight travels through much thicker atmosphere; blue light scattered away along the long path; only red/orange (longer wavelengths) reach observer.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -31784,7 +31784,7 @@
       "marks": 1,
       "year": 2024,
       "question": "(a) Two waves, each of amplitude ’a’ and frequency ’$\\omega$’ emanating from two coherent sources of light superpose at a point. If the phase difference between the two waves is ϕ, obtain an expression for the resultant intensity at that point. OR (b) What is the effect on the interference pattern in Young’s double-slit experiment when (i) the source slit is moved closer to the plane of the slits, and (ii) the separation between the two slits is increased? Justify your answers.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Coherent sources: two sources having the same frequency and a constant phase difference. Required for sustained interference pattern. Examples: two pinholes illuminated by single source, laser beams.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -32521,7 +32521,7 @@
       "marks": 1,
       "year": 2016,
       "question": "Define the term wave front. State Huygen’s principle. Consider a plane wave front incident on a thin convex lens. Draw a proper diagram to show how the incident wave front traverses through the lens and after refraction focusses on the focal point of the lens, giving the shape of the emergent wave front. OR Explain the following, giving reasons: (i) When monochromatic light is incident on a surface separating two media, the reflected and refracted light both have the same frequency as the incident frequency. (ii) When light travels from a rarer to a denser medium, the speed decreases. Does this decrease in speed imply a reduction in the energy carried by the wave? (iii) In the wave picture of light, intensity of light is determined by the square of the amplitude of the wave. What determines the intensity in the photon picture of light?",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use lens formula $1/v - 1/u = 1/f$ with sign convention (distances measured from optical centre; real positive/negative as per convention). Magnification $m = v/u$.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -32807,7 +32807,7 @@
       "marks": 1,
       "year": 2026,
       "question": "(a) What are coherent sources? Why are they necessary for observing stable interference pattern? Draw a graph showing the variation of intensity of light with the position on the screen in Young’s double-slit experiment.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Refer to the official CBSE solved paper for this year. (Requires graph/diagram — see CBSE marking scheme for Wave Optics.)",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
@@ -32928,7 +32928,7 @@
       "marks": 1,
       "year": 2023,
       "question": "(i) State Huygen’s principle. With the help of a diagram, show how a plane wave is reflected from a surface. Hence verify the law of reflection. (ii) A concave mirror of focal length 12 cm forms a three times magnified virtual image of an object. Find the distance of the object from the mirror.",
-      "answer": "Refer to the official CBSE solved paper for this year.",
+      "answer": "Use mirror formula $1/v + 1/u = 1/f = 2/R$ with sign convention. Magnification $m = -v/u$. Focal length = half the radius of curvature for spherical mirror.",
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
