@@ -49,6 +49,8 @@ export default function QuestionCard({ question, index = 0, showChapter = true }
   const [bookmarked, setBookmarked] = useState(false);
   const [solved, setSolved] = useState(false);
 
+  const hasRealAnswer = question.answer && !question.answer.startsWith("Refer to the official CBSE");
+
   useEffect(() => {
     setBookmarked(isBookmarked(question.id));
     setSolved(isSolved(question.id));
@@ -109,7 +111,7 @@ export default function QuestionCard({ question, index = 0, showChapter = true }
                 {question.chapter}
               </span>
             )}
-            {question.answer && (
+            {hasRealAnswer && (
               <span className="inline-flex items-center gap-1 text-xs text-green-600 dark:text-green-400">
                 <Lightbulb className="h-3 w-3" />
                 Answer available
@@ -188,17 +190,17 @@ export default function QuestionCard({ question, index = 0, showChapter = true }
                 className="overflow-hidden"
               >
                 <div className="mt-3 p-4 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 border border-indigo-100 dark:border-indigo-800">
-                  {question.answer ? (
+                  {hasRealAnswer ? (
                     <>
                       <p className="text-xs font-semibold text-indigo-600 dark:text-indigo-400 mb-3 uppercase tracking-wide flex items-center gap-1.5">
                         <Lightbulb className="h-3.5 w-3.5" />
                         Exam-Ready Answer
                       </p>
-                      <AnswerRenderer answer={question.answer} marks={question.marks} />
+                      <AnswerRenderer answer={question.answer!} marks={question.marks} />
                     </>
                   ) : (
                     <p className="text-sm text-gray-500 dark:text-gray-400 italic">
-                      Answer not available — refer to the official CBSE solved paper for this year.
+                      This question refers to a figure/graph — refer to the official CBSE solved paper for this year.
                     </p>
                   )}
                 </div>
