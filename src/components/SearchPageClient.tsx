@@ -1,12 +1,13 @@
 "use client";
 
 import { useState, useMemo, useCallback } from "react";
-import { Search } from "lucide-react";
+import { Search, AlertTriangle } from "lucide-react";
 import type { Question, Chapter } from "@/types";
 import QuestionCard from "@/components/QuestionCard";
 import SearchBar from "@/components/SearchBar";
 import FilterBar from "@/components/FilterBar";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 interface SearchPageClientProps {
   questions: Question[];
@@ -23,19 +24,20 @@ export default function SearchPageClient({ questions, chapters, years }: SearchP
   const [marksFilter, setMarksFilter] = useState("");
   const [page, setPage] = useState(1);
   const [hasSearched, setHasSearched] = useState(false);
+  const [showOutOfSyllabus, setShowOutOfSyllabus] = useState(false);
 
   const filtered = useMemo(() => {
     const s = search.trim().toLowerCase();
     const hasFilter = s || chapterFilter || yearFilter || marksFilter;
     if (!hasFilter) return [];
 
-    let list = questions;
+    let list = showOutOfSyllabus ? questions : questions.filter((q) => q.in_syllabus !== false);
     if (chapterFilter) list = list.filter((q) => q.chapter === chapterFilter);
     if (yearFilter) list = list.filter((q) => String(q.year) === yearFilter);
     if (marksFilter) list = list.filter((q) => String(q.marks) === marksFilter);
     if (s) list = list.filter((q) => q.question.toLowerCase().includes(s));
     return list;
-  }, [questions, search, chapterFilter, yearFilter, marksFilter]);
+  }, [questions, search, chapterFilter, yearFilter, marksFilter, showOutOfSyllabus]);
 
   const paginated = useMemo(() => filtered.slice(0, page * PAGE_SIZE), [filtered, page]);
 
@@ -85,6 +87,18 @@ export default function SearchPageClient({ questions, chapters, years }: SearchP
           onMarksChange={(v) => { setMarksFilter(v); setPage(1); setHasSearched(true); }}
           onClear={handleClear}
         />
+        <button
+          onClick={() => { setShowOutOfSyllabus(!showOutOfSyllabus); setPage(1); }}
+          className={cn(
+            "mt-2 flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium border transition-colors",
+            showOutOfSyllabus
+              ? "bg-amber-100 dark:bg-amber-900/30 border-amber-300 dark:border-amber-700 text-amber-700 dark:text-amber-400"
+              : "bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 hover:bg-amber-50 dark:hover:bg-amber-900/20"
+          )}
+        >
+          <AlertTriangle className="h-3 w-3" />
+          {showOutOfSyllabus ? "Hide removed-from-syllabus questions" : "Include removed-from-syllabus questions"}
+        </button>
       </div>
 
       <div className="mt-6">
