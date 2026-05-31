@@ -9,7 +9,6 @@ import {
   Eye,
   EyeOff,
   Lightbulb,
-  AlertTriangle,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -69,8 +68,6 @@ export default function QuestionCard({ question, index = 0, showChapter = true }
 
   const marksColor = MARKS_COLOR[question.marks] ?? "blue";
 
-  const isOutOfSyllabus = question.in_syllabus === false;
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -78,15 +75,13 @@ export default function QuestionCard({ question, index = 0, showChapter = true }
       transition={{ duration: 0.3, delay: Math.min(index * 0.03, 0.5) }}
       className={cn(
         "group relative rounded-xl border bg-white dark:bg-gray-900 shadow-sm hover:shadow-md transition-shadow duration-200",
-        isOutOfSyllabus && "opacity-60 border-dashed border-gray-300 dark:border-gray-700",
-        solved && !isOutOfSyllabus && "border-green-200 dark:border-green-800",
-        bookmarked && !solved && !isOutOfSyllabus && "border-blue-200 dark:border-blue-800"
+        solved && "border-green-200 dark:border-green-800",
+        bookmarked && !solved && "border-blue-200 dark:border-blue-800"
       )}
     >
       {/* Top accent line */}
       <div className={cn(
         "h-0.5 rounded-t-xl",
-        isOutOfSyllabus ? "bg-gray-300 dark:bg-gray-700" :
         question.marks === 1 ? "bg-blue-500" :
         question.marks === 2 ? "bg-green-500" :
         question.marks === 3 ? "bg-purple-500" :
@@ -94,18 +89,6 @@ export default function QuestionCard({ question, index = 0, showChapter = true }
       )} />
 
       <div className="p-5">
-        {/* Out-of-syllabus banner */}
-        {isOutOfSyllabus && (
-          <div className="flex items-center gap-1.5 mb-3 px-2.5 py-1.5 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 text-amber-700 dark:text-amber-400 text-xs font-medium">
-            <AlertTriangle className="h-3.5 w-3.5 shrink-0" />
-            Not in current syllabus
-            {question.removed_reason && (
-              <span className="text-amber-500 dark:text-amber-500 font-normal">
-                — {question.removed_reason}
-              </span>
-            )}
-          </div>
-        )}
 
         {/* Header row */}
         <div className="flex items-start justify-between gap-3 mb-3">

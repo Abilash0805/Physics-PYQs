@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useCallback } from "react";
 import Link from "next/link";
-import { ArrowLeft, BookOpen, AlertTriangle } from "lucide-react";
+import { ArrowLeft, BookOpen } from "lucide-react";
 import type { Chapter, Question } from "@/types";
 import QuestionCard from "@/components/QuestionCard";
 import SearchBar from "@/components/SearchBar";
@@ -30,22 +30,14 @@ export default function ChapterQuestions({ chapter, questions, years }: ChapterQ
   const [marksFilter, setMarksFilter] = useState("");
   const [yearFilter, setYearFilter] = useState("");
   const [page, setPage] = useState(1);
-  const [showOutOfSyllabus, setShowOutOfSyllabus] = useState(false);
 
   const chapterYears = useMemo(
     () => chapter.years.slice().sort((a, b) => b - a),
     [chapter.years]
   );
 
-  const outOfSyllabusCount = useMemo(
-    () => questions.filter((q) => q.in_syllabus === false).length,
-    [questions]
-  );
-
   const filtered = useMemo(() => {
-    let list = showOutOfSyllabus
-      ? questions
-      : questions.filter((q) => q.in_syllabus !== false);
+    let list = questions;
     if (marksFilter) list = list.filter((q) => String(q.marks) === marksFilter);
     if (yearFilter) list = list.filter((q) => String(q.year) === yearFilter);
     if (search.trim()) {
@@ -53,7 +45,7 @@ export default function ChapterQuestions({ chapter, questions, years }: ChapterQ
       list = list.filter((q) => q.question.toLowerCase().includes(s));
     }
     return list;
-  }, [questions, marksFilter, yearFilter, search, showOutOfSyllabus]);
+  }, [questions, marksFilter, yearFilter, search]);
 
   const paginated = useMemo(
     () => filtered.slice(0, page * PAGE_SIZE),
@@ -66,8 +58,6 @@ export default function ChapterQuestions({ chapter, questions, years }: ChapterQ
     setYearFilter("");
     setPage(1);
   }, []);
-
-  const inSyllabusCount = questions.length - outOfSyllabusCount;
 
   return (
     <div className="px-4 sm:px-6 lg:px-8 py-6">
@@ -88,13 +78,8 @@ export default function ChapterQuestions({ chapter, questions, years }: ChapterQ
             <div className="flex flex-wrap items-center gap-3 text-sm text-gray-500 dark:text-gray-400">
               <span className="flex items-center gap-1">
                 <BookOpen className="h-3.5 w-3.5" />
-                {inSyllabusCount} in-syllabus questions
+                {questions.length} questions
               </span>
-              {outOfSyllabusCount > 0 && (
-                <span className="text-amber-600 dark:text-amber-500">
-                  +{outOfSyllabusCount} removed from syllabus
-                </span>
-              )}
               {chapter.years.length > 0 && (
                 <span>{Math.min(...chapter.years)}–{Math.max(...chapter.years)}</span>
               )}
@@ -146,31 +131,15 @@ export default function ChapterQuestions({ chapter, questions, years }: ChapterQ
               ))}
             </select>
           </div>
-
-          {/* Out-of-syllabus toggle */}
-          {outOfSyllabusCount > 0 && (
-            <button
-              onClick={() => { setShowOutOfSyllabus(!showOutOfSyllabus); setPage(1); }}
-              className={cn(
-                "ml-2 shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium border transition-colors",
-                showOutOfSyllabus
-                  ? "bg-amber-100 dark:bg-amber-900/30 border-amber-300 dark:border-amber-700 text-amber-700 dark:text-amber-400"
-                  : "bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 hover:bg-amber-50 dark:hover:bg-amber-900/20"
-              )}
-            >
-              <AlertTriangle className="h-3 w-3" />
-              {showOutOfSyllabus ? "Hide removed" : `Show +${outOfSyllabusCount} removed`}
-            </button>
-          )}
         </div>
       </div>
 
       {/* Results count */}
       <div className="flex items-center justify-between mb-4">
         <p className="text-sm text-gray-500 dark:text-gray-400">
-          {filtered.length === (showOutOfSyllabus ? questions.length : inSyllabusCount)
+          {filtered.length === questions.length
             ? `${filtered.length} questions`
-            : `${filtered.length} of ${showOutOfSyllabus ? questions.length : inSyllabusCount} questions`}
+            : `${filtered.length} of ${questions.length} questions`}
         </p>
         {(search || marksFilter || yearFilter) && (
           <button
