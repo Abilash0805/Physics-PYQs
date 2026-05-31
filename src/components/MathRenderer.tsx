@@ -57,6 +57,8 @@ function MathRenderer({ text, className = "" }: MathRendererProps) {
         // Unicode operators
         .replace(/×/g, "$\\times$")
         .replace(/÷/g, "$\\div$")
+        // Arrow before a letter = vector notation (e.g. →E → \vec{E})
+        .replace(/→([A-Za-z])/g, (_, letter) => `$\\vec{${letter}}$`)
         .replace(/→/g, "$\\rightarrow$")
         .replace(/≤/g, "$\\leq$")
         .replace(/≥/g, "$\\geq$")
