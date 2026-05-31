@@ -69,6 +69,9 @@ export default function Navbar() {
 
         {/* Right actions */}
         <div className="flex items-center gap-2">
+          <span className="hidden sm:inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/30 dark:to-indigo-900/30 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 select-none">
+            Built by Abilash V
+          </span>
           <Button variant="ghost" size="icon" onClick={toggleDark} className="h-8 w-8">
             {dark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </Button>
