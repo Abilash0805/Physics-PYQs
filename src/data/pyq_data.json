@@ -30,8 +30,7 @@
       "marks_dist": {
         "1": 168
       },
-      "slug": "electric-charges-and-fields",
-      "count_total": 168
+      "slug": "electric-charges-and-fields"
     },
     {
       "name": "Electrostatic Potential and Capacitance",
@@ -63,8 +62,7 @@
       "marks_dist": {
         "1": 218
       },
-      "slug": "electrostatic-potential-and-capacitance",
-      "count_total": 218
+      "slug": "electrostatic-potential-and-capacitance"
     },
     {
       "name": "Current Electricity",
@@ -97,8 +95,7 @@
       "marks_dist": {
         "1": 322
       },
-      "slug": "current-electricity",
-      "count_total": 322
+      "slug": "current-electricity"
     },
     {
       "name": "Moving Charges and Magnetism",
@@ -131,8 +128,7 @@
       "marks_dist": {
         "1": 275
       },
-      "slug": "moving-charges-and-magnetism",
-      "count_total": 275
+      "slug": "moving-charges-and-magnetism"
     },
     {
       "name": "Magnetism and Matter",
@@ -164,8 +160,7 @@
       "marks_dist": {
         "1": 78
       },
-      "slug": "magnetism-and-matter",
-      "count_total": 78
+      "slug": "magnetism-and-matter"
     },
     {
       "name": "Electromagnetic Induction",
@@ -198,8 +193,7 @@
       "marks_dist": {
         "1": 176
       },
-      "slug": "electromagnetic-induction",
-      "count_total": 176
+      "slug": "electromagnetic-induction"
     },
     {
       "name": "Alternating Current",
@@ -232,8 +226,7 @@
       "marks_dist": {
         "1": 169
       },
-      "slug": "alternating-current",
-      "count_total": 169
+      "slug": "alternating-current"
     },
     {
       "name": "Electromagnetic Waves",
@@ -265,8 +258,7 @@
       "marks_dist": {
         "1": 171
       },
-      "slug": "electromagnetic-waves",
-      "count_total": 171
+      "slug": "electromagnetic-waves"
     },
     {
       "name": "Ray Optics and Optical Instruments",
@@ -300,8 +292,7 @@
       "marks_dist": {
         "1": 355
       },
-      "slug": "ray-optics-and-optical-instruments",
-      "count_total": 355
+      "slug": "ray-optics-and-optical-instruments"
     },
     {
       "name": "Wave Optics",
@@ -335,8 +326,7 @@
       "marks_dist": {
         "1": 225
       },
-      "slug": "wave-optics",
-      "count_total": 225
+      "slug": "wave-optics"
     },
     {
       "name": "Dual Nature of Radiation and Matter",
@@ -370,8 +360,7 @@
       "marks_dist": {
         "1": 256
       },
-      "slug": "dual-nature-of-radiation-and-matter",
-      "count_total": 256
+      "slug": "dual-nature-of-radiation-and-matter"
     },
     {
       "name": "Atoms",
@@ -400,8 +389,7 @@
       "marks_dist": {
         "1": 163
       },
-      "slug": "atoms",
-      "count_total": 163
+      "slug": "atoms"
     },
     {
       "name": "Nuclei",
@@ -435,8 +423,7 @@
       "marks_dist": {
         "1": 158
       },
-      "slug": "nuclei",
-      "count_total": 158
+      "slug": "nuclei"
     },
     {
       "name": "Semiconductor Electronics",
@@ -470,8 +457,7 @@
       "marks_dist": {
         "1": 381
       },
-      "slug": "semiconductor-electronics",
-      "count_total": 381
+      "slug": "semiconductor-electronics"
     }
   ],
   "questions": [
@@ -4931,30 +4917,6 @@
       "in_syllabus": true
     },
     {
-      "id": "current-electricity-74",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2021,
-      "question": "A potentiometer draws a steady current from the battery (B) of emf E in the circuit as shown in the figure. The balancing length for the cell of emf $\\varepsilon$ when key K2 is kept open, is ℓ1. If key K2 is closed and a resistance S is introduced in the resistance box (RB), the balancing length becomes ℓ2. The balancing length ℓ1 > ℓ2 because (A) E > $\\varepsilon$. (B) positive terminal of the battery is connected to positive terminal of the cell. (C) the voltage drop across the cell is greater than that across the battery. (D) terminal potential difference of the cell is less than its emf.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
-      "id": "current-electricity-75",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2021,
-      "question": "The high resistance $R_1$ in the circuit is used to (A) keep the balance point near the mid-point of the potentiometer wire AC. (B) reduce the current supplied by the battery (B) to zero at balance point. (C) protect the galvanometer from damage due to large current. (D) make the galvanometer more sensitive.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
       "id": "current-electricity-76",
       "chapter": "Current Electricity",
       "marks": 1,
@@ -4964,42 +4926,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "current-electricity-77",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2021,
-      "question": "Two potentiometers P and Q use the same wire of lengths 5 m and 10 m respectively, between A and C. They are connected to battery (B) in the circuit separately. The potentiometer which is preferred to compare the emfs of two cells is (A) P, because potential gradient is less. (B) Q, because potential gradient is less. (C) P, because current is more. (D) Q, because resistance of the potentiometer is less.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
-      "id": "current-electricity-78",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2021,
-      "question": "The reason for preferring manganin wire in a potentiometer is because (A) of high value of its temperature coefficient of resistivity. (B) of its low resistivity. (C) of low value of its temperature coefficient of resistivity. (D) its resistance decreases with increase in temperature.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
-      "id": "current-electricity-79",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2020,
-      "question": "A potentiometer can measure emf of a cell because (A) the sensitivity of potentiometer is large. (B) no current is drawn from the cell at balance. (C) no current flows in the wire of potentiometer at balance. (D) internal resistance of cell is neglected.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
     },
     {
       "id": "current-electricity-80",
@@ -5167,18 +5093,6 @@
       "in_syllabus": true
     },
     {
-      "id": "current-electricity-95",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2020,
-      "question": "Fill in the blank with appropriate answer. To minimize the percentage error in the determination of unknown resistance of a conductor in meter bridge experiment, the balance point is adjusted near ________ of the wire. OR In potentiometer, a long uniform wire is used to ________ potential gradient along the wire.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
       "id": "current-electricity-96",
       "chapter": "Current Electricity",
       "marks": 1,
@@ -5221,18 +5135,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "current-electricity-100",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2019,
-      "question": "A carbon resistor is shown in the figure. Using colour code, write the value of the resistance.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Carbon Resistors & Colour Code"
     },
     {
       "id": "current-electricity-101",
@@ -5288,18 +5190,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "current-electricity-106",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2016,
-      "question": "The variation of potential difference V with length l in case of two potentiometer wires P and Q is as shown. Which one of these will you prefer for comparing emfs of two primary cells and why?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
     },
     {
       "id": "current-electricity-107",
@@ -5454,18 +5344,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "current-electricity-121",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2011,
-      "question": "A resistance R is connected across a cell of emf $\\varepsilon$ and internal resistance r. A potentiometer now measures the potential difference between the terminals of the cell as V . Write the expression for r in terms of $\\varepsilon$, V and R.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
     },
     {
       "id": "current-electricity-122",
@@ -6007,18 +5885,6 @@
       "in_syllabus": true
     },
     {
-      "id": "current-electricity-171",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2020,
-      "question": "Two cells of emf E1 and E2 (E1 > E2) are connected as shown in the figure below. When a potentiometer is used to measure potential difference between the points A and B, the balancing length of the potentiometer wire is 300 cm. But the same potentiometer for the potential difference between points A and C, gives the balancing length 100 cm. Find E1 E2 .",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
       "id": "current-electricity-172",
       "chapter": "Current Electricity",
       "marks": 1,
@@ -6129,30 +5995,6 @@
       "in_syllabus": true
     },
     {
-      "id": "current-electricity-182",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2018,
-      "question": "In a potentiometer arrangement for determining the emf of a cell, the balance point of the cell in open circuit is 350 cm. When a resistance of 9 Ωis used in the external circuit of the cell, the balance point shifts to 300 cm. Determine the internal resistance of the cell.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
-      "id": "current-electricity-183",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2018,
-      "question": "A 10 V cell of negligible internal resistance is connected in parallel across a battery of emf 200 V and internal resistance 38 Ωas shown in the figure. Find the value of current in the circuit. OR In a potentiometer arrangement for determining the emf of a cell, the balance point of the cell in open circuit is 350 cm. When a resistance of 9 Ωis used in the external circuit of the cell, the balance point shifts to 300 cm. Determine the internal resistance of the cell.",
-      "answer": "Writing the equation 1 Finding the current 1 By Kirchoff's law, we have, for the loop ABDC, + 200 – 38i – 10 = 0 1 \\ i = 190 38 5 A A = ${}^{1}_{10}\\text{V}$ 200 V 38 A B C D Ω Alternatively: Finding the net emf 1 Stating that I V R = ½ Calculating I ½ The two cells being in 'opposition', \\ net emf = 200V -10 V=190 V Now I = V R \\ I = 190 ${}^{38}_{5}\\text{V}$ A Ω= 1 [Note : Some students may use the formulae $\\varepsilon \\varepsilon \\varepsilon$ r r r = + 1 1 2 2 , and ½ r = r r r r 1 2 1 2 ( ) + ( ) ½ For two cells connected in parallel They may then say that r = 0; e is indeterminate and hence I is also indeterminate [Award full marks(2) to students giving this line of reasoning.] OR Stating the formula 1 Calculating r 1 We have,r = l l R 1 2 1 -     = l l l R 1 2 2 -     \\ r = 350 300 300 9 -    $\\times$ Ω ½ = 50 300 9 1 5 $\\times$ Ω Ω = . ½ [CBSE Marking Scheme, 2018]",
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
       "id": "current-electricity-184",
       "chapter": "Current Electricity",
       "marks": 1,
@@ -6241,18 +6083,6 @@
       "in_syllabus": true
     },
     {
-      "id": "current-electricity-192",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2013,
-      "question": "Two primary cells of e.m.f. E1 and E2 (E1 > E2) are connected to the potentiometer wire AB as shown in the figure. If the balancing lengths for the two combinations of the cells are 250 cm and 400 cm, find the ratio of E1 and E2.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
       "id": "current-electricity-193",
       "chapter": "Current Electricity",
       "marks": 1,
@@ -6262,18 +6092,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "current-electricity-194",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2012,
-      "question": "Two students X and Y perform an experiment on potentiometer separately using the circuit given below. Keeping other parameters unchanged, how will the position of the null point be affected if (i) ’X’ increases the value of resistance R in the set-up by keeping the key K1 closed and the key K2 open? (ii) ’Y’ decreases the value of resistance S in the set-up, while the key K2 remains open and the key K1 closed? Justify.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
     },
     {
       "id": "current-electricity-195",
@@ -6307,18 +6125,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "current-electricity-198",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2011,
-      "question": "(a) You are required to select a carbon resistor of resistance 47 kΩ± 10% from a large collection. What should be the sequence of colour bands used to code it? (b) Write two characteristics of manganin which make it suitable for making standard resistances.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Carbon Resistors & Colour Code"
     },
     {
       "id": "current-electricity-199",
@@ -6396,18 +6202,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "current-electricity-206",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2007,
-      "question": "A voltage of 30 V is applied across a carbon resistor with first, second and third rings of blue, black and yellow colours respectively. Calculate the value of current, in mA, through the resistor.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Carbon Resistors & Colour Code"
     },
     {
       "id": "current-electricity-207",
@@ -6861,18 +6655,6 @@
       "in_syllabus": true
     },
     {
-      "id": "current-electricity-248",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2020,
-      "question": "(a) Explain the principle of working of a potentiometer. (b) In a potentiometer, a standard source of emf 5 V and negligible internal resistance maintains a steady current through the potentiometer wire of length 10 m. Two primary cells of emf E1 and E2 are joined together in a series with (i) same polarity and (ii) opposite polarity. The combination is connected to the potentiometer circuit in each case. The balancing length of the wire in the two cases are found to be 700 cm and 100 cm, respectively. Find the values of emf of the two cells.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
       "id": "current-electricity-249",
       "chapter": "Current Electricity",
       "marks": 1,
@@ -6939,18 +6721,6 @@
       "in_syllabus": true
     },
     {
-      "id": "current-electricity-255",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2019,
-      "question": "A student uses the circuit diagram of a potentiometer as shown in the figure. (a) For a steady current I passing through the potentiometer wire, he gets a null point for the cell $\\varepsilon$1 and not for $\\varepsilon$2. Give reason for this observation and suggest how this difficulty can be resolved. (b) What is the function of resistance R used in the circuit? How will the change in its value affect the null point? (c) How can the sensitivity of the potentiometer be increased?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
       "id": "current-electricity-256",
       "chapter": "Current Electricity",
       "marks": 1,
@@ -7006,18 +6776,6 @@
       "in_syllabus": true
     },
     {
-      "id": "current-electricity-261",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2019,
-      "question": "(a) For the circuit shown in the figure, how would the balancing length be affected, if (i) $R_1$ is decreased, (ii) $R_2$ is increased, the other factors remaining the same in the circuit? Justify your answer in each case. (b) Why is a potentiometer preferred over a voltmeter? Give reason. OR State the underlying principle of meter bridge. Draw the circuit diagram and explain how the unknown resistance of a conductor can be determined by this method.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
       "id": "current-electricity-262",
       "chapter": "Current Electricity",
       "marks": 1,
@@ -7027,18 +6785,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "current-electricity-263",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2017,
-      "question": "A resistance of R draws current from a potentiometer. The potentiometer wire, AB, has a total resistance of R0. A voltage V is supplied to the potentiometer. Derive an expression for the voltage across R when the sliding contact is in the middle of potentiometer wire.",
-      "answer": " Derivation of expression of voltage across resistance R 3 V B Ro A I1 R C Resistance between points A & C 1 1 R = 1 1 2 0 R R +     ½ Effective resistance between points A & B $R_2$ = R R R R R 0 0 0 2 2 2 +           + ½ Current drawn from the voltage source, I = V $R_2$ ½ I = V R R R R R 0 0 0 2 2 2 +           + ½ Let current through R be I1 I1 = I R R R 0 0 2 2     + Oswaal CBSE 10 Previous years’ Solved Papers, Class–12th Voltage across R, V1= I1R = IR R R R 0 0 2 2 +     . = RR R R V RR R R R 0 0 0 0 0 2 2 2 2 +     +    + . ½ = 2 4 0 RV R R + [CBSE Marking Scheme, 2017] *16. Define the term 'amplitude modulation'. Explain any two factors which justify the need for modulating a low frequency base-band signal. 3",
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
     },
     {
       "id": "current-electricity-264",
@@ -7096,18 +6842,6 @@
       "in_syllabus": true
     },
     {
-      "id": "current-electricity-269",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2015,
-      "question": "State the underlying principle of a potentiometer. Write two factors by which current sensitivity of a potentiometer can be increased. Why is a potentiometer preferred over a voltmeter for measuring the emf of a cell?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
       "id": "current-electricity-270",
       "chapter": "Current Electricity",
       "marks": 1,
@@ -7117,30 +6851,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "current-electricity-271",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2014,
-      "question": "A potentiometer wire of length 1 m has a resistance of 10 Ω. It is connected to a 6 V battery in series with a resistance of 5 Ω. Determine the emf of the primary cell which gives a balance point at 40 cm.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
-      "id": "current-electricity-272",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2014,
-      "question": "Answer the following : (a) Why are the connections between the resistors in a meter bridge made of thick copper strips ? (b) Why is it generally preferred to obtain the balance point in the middle of the meter bridge wire ? (c) Which material is used for the meter bridge wire and why ? OR A resistance of R Ωdraws current from a potentiometer as shown in the figure. The potentiometer has a total resistance R0 Ω. A voltage V is supplied to the potentiometer. Derive an expression for the voltage across R when the sliding contact is in the middle of the potentiometer.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
     },
     {
       "id": "current-electricity-273",
@@ -7163,18 +6873,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "current-electricity-275",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2013,
-      "question": "State the principle of potentiometer. With the help of circuit diagram, describe a method to find the internal resistance of a primary cell.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
     },
     {
       "id": "current-electricity-276",
@@ -7219,18 +6917,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "current-electricity-280",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2012,
-      "question": "In the figure a long uniform potentiometer wire AB is having a constant potential gradient along its length. The null points for the two primary cells of emfs $\\varepsilon$1 and $\\varepsilon$2 connected in the manner shown are obtained at a distance of 120 cm and 300 cm from the end A. Find (i) $\\varepsilon$1/$\\varepsilon$2 and (ii) position of null point for the cell $\\varepsilon$1. How is the sensitivity of a potentiometer increased?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
     },
     {
       "id": "current-electricity-281",
@@ -7288,30 +6974,6 @@
       "in_syllabus": true
     },
     {
-      "id": "current-electricity-286",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2011,
-      "question": "State the underlying principle of a potentiometer. Describe briefly, giving the necessary circuit diagram, how a potentiometer is used to measure the internal resistance of a given cell.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
-      "id": "current-electricity-287",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2010,
-      "question": "Write the principle of working of a potentiometer. Describe briefly, with the help of a circuit diagram, how a potentiometer is used to determine the internal resistance of a given cell.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
       "id": "current-electricity-288",
       "chapter": "Current Electricity",
       "marks": 1,
@@ -7356,18 +7018,6 @@
       "in_syllabus": true
     },
     {
-      "id": "current-electricity-292",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2008,
-      "question": "A potentiometer wire of length 1 m is connected to a driver cell of emf 3 V as shown in the figure. When a cell of emf 1.5 V is used in the secondary circuit, the balance point is found to be 60 cm. On replacing this cell and using a cell of unknown emf, the balance point shifts to 80 cm. (i) Calculate unknown emf of the cell. (ii) Explain with reason, whether the circuit works, if the drive cell is replaced with a cell emf 1 V . (iii) Does the high resistance R, used in the secondary circuit affect the balance point? Justify your answer.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
       "id": "current-electricity-293",
       "chapter": "Current Electricity",
       "marks": 1,
@@ -7401,18 +7051,6 @@
       "in_syllabus": true
     },
     {
-      "id": "current-electricity-296",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2007,
-      "question": "For the potentiometer circuit shown in the given figure, points X and Y represent the two terminals of an unknown emf E′. A student observed that when the jockey is moved from the end A to the end B of the potentiometer wire, the deflection in the galvanometer remains in the same direction. What may be the two possible faults in the circuit that could result in this observation? If the galvanometer deflection at the end B is (i) more, (ii) less, than that at end A, which of the two faults, listed above, would be there in the circuit? Give reasons in support of your answer in each case.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
       "id": "current-electricity-297",
       "chapter": "Current Electricity",
       "marks": 1,
@@ -7435,18 +7073,6 @@
       "in_syllabus": true
     },
     {
-      "id": "current-electricity-299",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2006,
-      "question": "A 10 m long wire of uniform cross-section and resistance 20 Ωis used in a potentiometer. The wire is connected in series with a battery of 5 V along with an external resistance of 480 Ω. If an unknown emf E is balanced at 6.0 m length of the wire, calculate: (i) the potential gradient of the potentiometer wire, (ii) the value of the unknown emf E.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
       "id": "current-electricity-300",
       "chapter": "Current Electricity",
       "marks": 1,
@@ -7456,18 +7082,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "current-electricity-301",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2005,
-      "question": "State the principle of potentiometer. Draw a circuit diagram used to compare the e.m.f. of two primary cells. Write the formula used. How can the sensitivity of a potentiometer be increased?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
     },
     {
       "id": "current-electricity-302",
@@ -7490,18 +7104,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "current-electricity-304",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2003,
-      "question": "What is meant by the sensitivity of a potentiometer? A battery E1 of 4 V and a variable resistance $R_1$ are connected in series with the wire AB of the potentiometer. The length of the wire of the potentiometer is 1 metre. When a cell E2 of e.m.f. 1.5 volt is connected between points A and C, no current flows through E2. Length of AC = 60 cm. (i) Find the potential difference between the ends A and B of the potentiometer, (ii) Would the method work, if the battery E1 is replaced by a cell of e.m.f. of 1 V? 4-Mark Questions (2 questions · Section D · Case Study)",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
     },
     {
       "id": "current-electricity-305",
@@ -7603,18 +7205,6 @@
       "in_syllabus": true
     },
     {
-      "id": "current-electricity-314",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2019,
-      "question": "(a) Describe briefly, with the help of a circuit diagram, the method of measuring the internal resistance of a cell. (b) Give reason why a potentiometer is preferred over a voltmeter for the measurement of emf of a cell. (c) In the potentiometer circuit given below, calculate the balancing length l. Give reason, whether the circuit will work, if the driver cell of emf 5 V is replaced with a cell of 2 V, keeping all other factors constant. OR (a) State the working principle of a meter bridge used to measure an unknown resistance. (b) Give reason (i) why the connections between the resistors in a metre bridge are made of thick copper strips, (ii) why is it generally preferred to obtain the balance length near the mid-point of the bridge wire. (c) Calculate the potential difference across the 4 Ωresistor in the given electrical circuit, using Kirchhoff’s rules.",
-      "answer": "Circuit diagram and describing the method to measure internal resistance of cell by potentiometer 1+½ Reason 1 Calculating balancing length and reason (circuit works or not) 1½ +1 (a) Circuit diagram : K1 K2 N2 N1 R.B. A $\\varepsilon$ R B G 1 Brief description: Plug in the key K1 and keep K2 unplugged and the find the balancing length $l_1$ such that : E = Kl1 …1 ½ With the key K2 also plugged in find out balancing length $l_2$ again such that : V = Kl2 …2 ½ 1 E r R V   = -     1 2 1 l r R l   = -     (b) The potentiometer is preferred over the voltmeter for measurement of e.m.f. of a cell because potentiometer draws no current from the voltage source being measured. ½ (c) V = 5 V, RAB = 50 W, R = 450 W = = = + 5 1 0.01A 450 50 100 I ½ VAB = 0.01 $\\times$ 50 = 0.5 V - = = 1 0.5 0.05 $V_m$ 10 K ½ - $\\times$ = = = 3 300 10 6m 0.05 V l K ½ With 2 V driver cell current in the circuit is = = + 2 0.04A. ${}^{450}_{50}\\text{I}$ ½ Potential difference across AB = 0.004 $\\times$ 50 = 200 mV. Hence the circuit will not work. ½ [CBSE Marking Scheme, 2019] OR Ans. (a) The circuit diagram of the metre bridge is as shown below: $l_1 l_1$ 100 – Metre Scale E K1 R S B A C D G SOLVED PAPER - 2019 (PHYSICS) Working Principle: The working principle of the meter bridge is the same as that of a Wheatstone bridge. The Wheatstone bridge gets balanced when: R R 2 1 = R R 4 3 1 For the metre bridge, circuit shown above, this relation takes the form R S = l l 1 1 100 ( ) - ½ A B C D I1 I2 I4 I3 $R_2 R_1 R_3$ R = R = S 4 E G Unknown resistance Standard resistance + – Determination of unknown Resistance (R): In the circuit diagram shown above, S is taken as a known standard resistance. We find the value of the balancing length $l_1$, corresponding to a given value of S. We then use the relation: R S = l l 1 1 100 ( ) - ½ to calculate R. By choosing (at least three) different values of S, we calculate R each time. The average of these values of R gives the value of the unknown resistance. (b) (i) This is to ensure that the connections do not contribute any extra, unknown, resistances in the circuit. (ii) This is done to minimize the percentage error in the value of the unknown resistance. Alternatively, This is done to have a better \"balancing out\" of the effects of any irregularity or non-uniformity in the metre bridge wire. 2 (c) This can help in increasing the sensitivity of the metre bridge circuit. A D E i F C B 8 V $i_2 \\frac{i_1}{6}$ V 2 Ω 4 Ω 1 Ω Apply the current junction rule of Kirchhoff's Law at point D i = $i_1$ + $i_2$ ...(i) Apply Kirchhoff's Voltage rule for the mesh AEFBA 4i + 2i1 = 8 or 2i + $i_1$ = 4 ...(ii) Apply Kirchhoff's voltage rule for mesh DEFCD 4i + 1i2 = 6 or, 4i + $i_2$ = 6 ...(iii) Adding equation (ii) and (iii), we get 6i + $i_1$ + $i_2$ = 10 or, 6i + i = 10 [using equation (i)] or i = 10 7 A Now, the potential difference across resistor 4 W VEF = i $\\frac{\\times}{4}$ = 10 7 $\\frac{\\times}{4}$ = 5 $\\frac{{}^{5}_{7}\\text{V}}{1}$ Outside Delhi Set -II 55/2/2 Note: Except these, all other questions are from Outside Delhi Set-I. SECTION -A",
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
       "id": "current-electricity-315",
       "chapter": "Current Electricity",
       "marks": 1,
@@ -7637,18 +7227,6 @@
       "in_syllabus": true
     },
     {
-      "id": "current-electricity-317",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2017,
-      "question": "(a) (i) State the principle on which a potentiometer works. How can a given potentiome- ter be made more sensitive? (ii) In the graph shown below for two potentiometers, state with reason which of the two potentiometers, A or B, is more sensitive. (b) Two metallic wires, P1 and P2 of the same material and same length but different cross-sectional areas, A1 and A2 are joined together and connected to a source of emf. Find the ratio of the drift velocities of free electrons in the two wires when they are connected (i) in series, and (ii) in parallel. OR (a) Define the capacitance of a capacitor. Obtain the expression for the capacitance of a parallel plate capacitor in vacuum in terms of plate area A and separation d between the plates. (b) A slab of material of dielectric constant K has the same area as the plates of a parallel plate capacitor but has a thickness d 2. Find the ratio of the capacitance with dielectric inside it to its capacitance without the dielectric.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
       "id": "current-electricity-318",
       "chapter": "Current Electricity",
       "marks": 1,
@@ -7660,18 +7238,6 @@
       "in_syllabus": true
     },
     {
-      "id": "current-electricity-319",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2016,
-      "question": "(i) Find the magnitude and direction of current in 1 Ωresistor in the given circuit. (ii) Two students X and Y perform an experiment on potentiometer separately using the circuit diagram shown below. Keeping other things unchanged (a) X increases the value of resistance R, (b) Y decreases the value of resistance S in the set up. How will these changes affect the position of null point in each case and why? OR (a) Use Kirchhoff’s rules, calculate the current in the arm AC of the given circuit. (b) On what principle does the meter bridge work? Why are the metal strips used in the bridge?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
-    },
-    {
       "id": "current-electricity-320",
       "chapter": "Current Electricity",
       "marks": 1,
@@ -7681,18 +7247,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "current-electricity-321",
-      "chapter": "Current Electricity",
-      "marks": 1,
-      "year": 2013,
-      "question": "(a) State the working principle of a potentiometer. With the help of the circuit diagram, explain how a potentiometer is used to compare the emf’s of two primary cells. Obtain the required expression used for comparing the emfs. (b) Write two possible causes for one sided deflection in a potentiometer experiment. OR (a) State Kirchhoff’s rules for an electric network. Using Kirchhoff’s rules, obtain the balance condition in terms of the resistances of four arms of Wheatstone bridge. (b) In the meterbridge experimental set up, shown in the figure, the null point ’D’ is obtained at a distance of 40 cm from end A of the meterbridge wire. If a resistance of 10 Ωis connected in series with $R_1$, null point is obtained at AD = 60 cm. Calculate the values of $R_1$ and $R_2$.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Potentiometer"
     },
     {
       "id": "current-electricity-322",
@@ -9004,18 +8558,6 @@
       "in_syllabus": true
     },
     {
-      "id": "dual-nature-of-radiation-and-matter-119",
-      "chapter": "Dual Nature of Radiation and Matter",
-      "marks": 1,
-      "year": 2006,
-      "question": "With what purpose was famous Davisson-Germer experiment with electrons performed?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Davisson-Germer Experiment"
-    },
-    {
       "id": "dual-nature-of-radiation-and-matter-120",
       "chapter": "Dual Nature of Radiation and Matter",
       "marks": 1,
@@ -9566,18 +9108,6 @@
       "in_syllabus": true
     },
     {
-      "id": "dual-nature-of-radiation-and-matter-170",
-      "chapter": "Dual Nature of Radiation and Matter",
-      "marks": 1,
-      "year": 2016,
-      "question": "Write briefly the underlying principle used in Davison-Germer experiment to verify wave nature of electrons experimentally. What is the de-Broglie wavelength of an electron with kinetic energy (K.E.) 120 eV?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Davisson-Germer Experiment"
-    },
-    {
       "id": "dual-nature-of-radiation-and-matter-171",
       "chapter": "Dual Nature of Radiation and Matter",
       "marks": 1,
@@ -10117,18 +9647,6 @@
       "in_syllabus": true
     },
     {
-      "id": "dual-nature-of-radiation-and-matter-220",
-      "chapter": "Dual Nature of Radiation and Matter",
-      "marks": 1,
-      "year": 2019,
-      "question": "(a) State briefly, with what purpose was Davisson and Germer experiment performed and what inference was drawn from this. (b) Obtain an expression for the ratio of the accelerating potentials required to accelerate a proton and an $\\alpha$-particle to have the same de-Broglie wavelength associated with them. OR (a) An electron and a proton are accelerated through the same potential. Which one of the two has (i) greater value of de-Broglie wavelength associated with it, and (ii) lesser momentum? Justify your answer in each case. (b) How is the momentum of a particle related with its de-Broglie wavelength? Show the variation on a graph.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Davisson-Germer Experiment"
-    },
-    {
       "id": "dual-nature-of-radiation-and-matter-221",
       "chapter": "Dual Nature of Radiation and Matter",
       "marks": 1,
@@ -10435,18 +9953,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "dual-nature-of-radiation-and-matter-249",
-      "chapter": "Dual Nature of Radiation and Matter",
-      "marks": 1,
-      "year": 2007,
-      "question": "Draw a schematic diagram of the experimental arrangement used by Davisson and Germer to establish the wave nature of electrons. Explain briefly how the de-Broglie relation was experimentally verified in case of electrons.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Davisson-Germer Experiment"
     },
     {
       "id": "dual-nature-of-radiation-and-matter-250",
@@ -18248,18 +17754,6 @@
       "in_syllabus": true
     },
     {
-      "id": "electrostatic-potential-and-capacitance-188",
-      "chapter": "Electrostatic Potential and Capacitance",
-      "marks": 1,
-      "year": 2003,
-      "question": "Draw a labelled diagram of Van de Graaff generator. State its principle of working. 4-Mark Questions (3 questions · Section D · Case Study)",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Van de Graaff Generator"
-    },
-    {
       "id": "electrostatic-potential-and-capacitance-189",
       "chapter": "Electrostatic Potential and Capacitance",
       "marks": 1,
@@ -18577,18 +18071,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "electrostatic-potential-and-capacitance-218",
-      "chapter": "Electrostatic Potential and Capacitance",
-      "marks": 1,
-      "year": 2008,
-      "question": "Explain the principle on which Van de Graaff generator operates. Draw a labeled schematic sketch and write briefly its working. A Van de Graaff type generator is capable of building up potential difference of $15 \\times 10^{6}$ V . The dielectric strength of the gas surrounding the electrode is $5 \\times 10^{7}$ V m-1. What is the minimum radius of the spherical shell required?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Van de Graaff Generator"
     },
     {
       "id": "magnetism-and-matter-1",
@@ -20901,18 +20383,6 @@
       "in_syllabus": true
     },
     {
-      "id": "moving-charges-and-magnetism-133",
-      "chapter": "Moving Charges and Magnetism",
-      "marks": 1,
-      "year": 2014,
-      "question": "State the underlying principle of a cyclotron. Write briefly how this machine is used to accelerate charged particles to high energies.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Cyclotron"
-    },
-    {
       "id": "moving-charges-and-magnetism-134",
       "chapter": "Moving Charges and Magnetism",
       "marks": 1,
@@ -21065,18 +20535,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "moving-charges-and-magnetism-148",
-      "chapter": "Moving Charges and Magnetism",
-      "marks": 1,
-      "year": 2006,
-      "question": "State the principle of working of a cyclotron. Write two uses of this machine. 3-Mark Questions (77 questions · Section C · SA)",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Cyclotron"
     },
     {
       "id": "moving-charges-and-magnetism-149",
@@ -21563,18 +21021,6 @@
       "in_syllabus": true
     },
     {
-      "id": "moving-charges-and-magnetism-193",
-      "chapter": "Moving Charges and Magnetism",
-      "marks": 1,
-      "year": 2019,
-      "question": "State the underlying principle of a cyclotron. Explain its working with the help of a schematic diagram. Obtain the expression for cyclotron frequency.",
-      "answer": "Underlying principle of cyclotron ½ Working 1 Schematic diagram ½ Obtaining the expression for the cyclotron frequency 1 Cyclotron works on the principle that kinetic energy of the charged particle is increased when they move in crossed oscillating electric and magnetic fields again and again. ½ OSCILLATOR D1 D2 Charged particle Exist Port Deflection plate Magnetic field out of the paper ½ When charged particle enters inside the metal boxes, no electric field acts on it, the magnetic field however acts on the particle and makes it go round on a circular path inside the metal boxes, every time when particle moves one dee to another it is acted upon by the electric field and the sign of electric field changes alternatively in turn with the circular motion of the particle, hence particle is accelerated, which in turn increases the kinetic energy of it. 1 mv r qvB r mv qB 2 = = Frequency, $\\nu$ v r v mv q q m 2 ${}^{2}_{2}\\text{B}$ B 1 Thus, frequency is independent of the speed 'v' and radius 'r'. [CBSE Marking Scheme, 2019]",
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Cyclotron"
-    },
-    {
       "id": "moving-charges-and-magnetism-194",
       "chapter": "Moving Charges and Magnetism",
       "marks": 1,
@@ -21584,18 +21030,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "moving-charges-and-magnetism-195",
-      "chapter": "Moving Charges and Magnetism",
-      "marks": 1,
-      "year": 2019,
-      "question": "Draw a labelled diagram of cyclotron. Explain its working principle. Show that cyclotron frequency is independent of the speed and radius of the orbit. OR (a) Derive, with the help of a diagram, the expression for the magnetic field inside a very long solenoid having n turns per unit length carrying a current I. (b) How is a toroid different from a solenoid?",
-      "answer": "[Try yourself, similar to Q.no.14 in Delhi - Set III] OR Ans. (a) A D C B N S conductor flow magnetic field Oswaal CBSE 10 Previous years’ Solved Papers, Class–12th Let us consider a very long straight solenoid having 'n' turns per unit length and carrying electric current 'I' as shown. Let us consider a point well inside the solenoid at which the magnetic induction is to be found. Consider a rectangular path ABCD of the line of induction such that AB = L = length of the rectangular path. The number of turns enclosed by the rectangles is nL. Hence the total electric current flowing through the rectangular path is nLI. According to Ampere's law, B dl $\\rightarrow\\rightarrow \\int$ . = m0nLI ...(1)½ Now for closed loop B dl $\\rightarrow\\rightarrow \\int$ . = B dl B dl B dl B dl $\\rightarrow\\rightarrow \\rightarrow\\rightarrow \\rightarrow\\rightarrow \\rightarrow\\rightarrow \\int \\int \\int \\int$ + + + . . . . A B B C C D D A As the direction of dl $\\rightarrow$ and B $\\rightarrow$ in path BC and AD are perpendicular \\ B dl $\\rightarrow\\rightarrow \\int$ . B C = B dl $\\rightarrow\\rightarrow \\int$ . D A = 0 ½ Near the ends of the solenoid, the lines of the field are crowded. While for rest of the space the lines are so widely spaced that the magnetic field is negligible. \\ B dl $\\rightarrow\\rightarrow \\int$ . C D = 0 Thus B dl $\\rightarrow\\rightarrow \\int$ . = B dl $\\rightarrow\\rightarrow \\int$ + + + . A B 0 0 0 = B dl $\\rightarrow\\rightarrow \\int$ . A B But B $\\rightarrow$ and dl $\\rightarrow$ are in the same direction B dl $\\rightarrow\\rightarrow$ . = B.dl. cos 0^$\\circ$ = B.dl B dl $\\rightarrow\\rightarrow \\int$ . = B dl . A B ≡ = B dl A B ≡ = BL ...(2) From equation (1) and (2) we get BL = m0nLI 1 B = m0nI (b) A toroid can be viewed as a solenoid which has been bent into a circular shape to close on itself. 1",
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Cyclotron"
     },
     {
       "id": "moving-charges-and-magnetism-196",
@@ -21651,18 +21085,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "moving-charges-and-magnetism-201",
-      "chapter": "Moving Charges and Magnetism",
-      "marks": 1,
-      "year": 2017,
-      "question": "(i) Obtain the expression for the cyclotron frequency. (ii) A deuteron and a proton are accelerated by the cyclotron. Can both be accelerated with the same oscillator frequency? Give reason to justify your answer.",
-      "answer": "(i) Derivation of the expression for cyclotron frequency 1 (ii) Reason / justification for the correct answer2 (i) Suppose the positive charge ion with charge q moves in a circle with a velocity v,then: mv r 2 = qvB r = mv qB ½ Frequency of revolution f = 1 2 Time Period = v r $\\pi$ ½ f = qB m 2$\\neq$ (ii) No The masses of the two particles, i.e. deuteron and proton, are different. Since (cyclotron) frequency depends inversely on the mass, they cannot be accelerated by the same oscillator frequency. 2 [CBSE Marking Scheme, 2017]",
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Cyclotron"
     },
     {
       "id": "moving-charges-and-magnetism-202",
@@ -21786,18 +21208,6 @@
       "in_syllabus": true
     },
     {
-      "id": "moving-charges-and-magnetism-213",
-      "chapter": "Moving Charges and Magnetism",
-      "marks": 1,
-      "year": 2016,
-      "question": "State the principle of a cyclotron. Show that the time period of revolution of particles in a cyclotron is independent of their speeds. Why is this property necessary for the operation of a cyclotron?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Cyclotron"
-    },
-    {
       "id": "moving-charges-and-magnetism-214",
       "chapter": "Moving Charges and Magnetism",
       "marks": 1,
@@ -21884,18 +21294,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "moving-charges-and-magnetism-222",
-      "chapter": "Moving Charges and Magnetism",
-      "marks": 1,
-      "year": 2009,
-      "question": "Explain the principle and working of a cyclotron with the help of a schematic diagram. Write the expression for cyclotron frequency.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Cyclotron"
     },
     {
       "id": "moving-charges-and-magnetism-223",
@@ -22129,30 +21527,6 @@
       "in_syllabus": true
     },
     {
-      "id": "moving-charges-and-magnetism-244",
-      "chapter": "Moving Charges and Magnetism",
-      "marks": 1,
-      "year": 2020,
-      "question": "(a) A circular loop of radius R carries a current I. Obtain an expression for the magnetic field at a point on its axis at a distance x from its centre. (b) A conducting rod of length 2 m is placed on a horizontal table in north-south direction. It carries a current of 5 A from south to north. Find the direction and magnitude of the magnetic force acting on the rod. Given that the Earth’s magnetic field at the place is $0.6 \\times 10^{-4}$ T and angle of dip is $\\frac{\\pi}{6}$ . OR (a) Obtain the expression for the deflecting torque acting on the current carrying rectan- gular coil of a galvanometer in a uniform magnetic field. Why is a radial magnetic field employed in the moving coil galvanometer? (b) Particles of mass $1.6 \\times 10^{-27}$ kg and charge $1.6 \\times 10^{-19}$ C are accelerated in a cyclotron of dee radius 40 cm. It employs a magnetic field 0.4 T. Find the kinetic energy (in MeV) of the particle beam imparted by the accelerator.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Cyclotron"
-    },
-    {
-      "id": "moving-charges-and-magnetism-245",
-      "chapter": "Moving Charges and Magnetism",
-      "marks": 1,
-      "year": 2020,
-      "question": "(a) Derive the expression for the force acting per unit length between two long straight parallel current carrying conductors. Hence define one ampere. (b) Two long parallel straight conductors are placed 12 cm apart in air. They carry equal currents of 3 A each. Find the magnitude and direction of the magnetic field at a point midway between them (drawing a figure) when the currents in them flow in opposite directions. OR (a) Draw the schematic sketch of a cyclotron. Explain the shape of the path on which charged particle moves when the particle is accelerated by it. (b) To convert a given galvanometer into a voltmeter of ranges 2V , V and V 2 volt, resistances $R_1$, $R_2$ and $R_3$ ohm respectively, are required to be connected in series with the galvanometer. Obtain the relationship between $R_1$, $R_2$ and $R_3$.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Cyclotron"
-    },
-    {
       "id": "moving-charges-and-magnetism-246",
       "chapter": "Moving Charges and Magnetism",
       "marks": 1,
@@ -22173,18 +21547,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "moving-charges-and-magnetism-248",
-      "chapter": "Moving Charges and Magnetism",
-      "marks": 1,
-      "year": 2016,
-      "question": "(i) Draw a neat labeled diagram of a cyclotron. (ii) Show that time period of ions in cyclotron is independent of both the speed of ion and radius of circular path. What is the significance of this property? (iii) An electron after being accelerated through a potential difference of 100 V enters a uniform magnetic field of 0.004 T perpendicular to its direction of motion. Calculate the radius of the path described by the electron. OR (i) Depict magnetic field lines due to two straight, long, parallel conductors carrying steady currents I1 and I2 in the same direction. (ii) Write the expression for the magnetic field produced by one of the conductor over the other. Deduce an expression for the force per unit length. (iii) Determine the direction of this force. (iv) In figure given below, wire PQ is fixed while the square loop ABCD is free to move under the influence of currents flowing in them. State with reason, in which direction does the loop begin to move or rotate?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Cyclotron"
     },
     {
       "id": "moving-charges-and-magnetism-249",
@@ -22218,18 +21580,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "moving-charges-and-magnetism-252",
-      "chapter": "Moving Charges and Magnetism",
-      "marks": 1,
-      "year": 2014,
-      "question": "(a) Deduce an expression for the frequency of revolution of a charged particle in a magnetic field and show that it is independent of velocity or energy of the particle. (b) Draw a schematic sketch of a cyclotron. Explain, giving the essential details of its construction, how it is used to accelerate the charged particles. OR (a) Draw a labelled diagram of a moving coil galvanometer. Describe briefly its principle and working. (b) Answer the following : (i) Why is it necessary to introduce a cylindrical soft iron core inside the coil of a galvanometer ? (ii) Increasing the current sensitivity of a galvanometer may not necessarily increase its voltage sensitivity. Explain, giving reason.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Cyclotron"
     },
     {
       "id": "moving-charges-and-magnetism-253",
@@ -22298,18 +21648,6 @@
       "in_syllabus": true
     },
     {
-      "id": "moving-charges-and-magnetism-259",
-      "chapter": "Moving Charges and Magnetism",
-      "marks": 1,
-      "year": 2011,
-      "question": "With the help of a labelled diagram, state the underlying principle of a cyclotron. Explain clearly how it works to accelerate the charged particles. Show that cyclotron frequency is independent of energy of the particle. Is there an upper limit on the energy acquired by the particle? Give reason.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Cyclotron"
-    },
-    {
       "id": "moving-charges-and-magnetism-260",
       "chapter": "Moving Charges and Magnetism",
       "marks": 1,
@@ -22319,18 +21657,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "moving-charges-and-magnetism-261",
-      "chapter": "Moving Charges and Magnetism",
-      "marks": 1,
-      "year": 2011,
-      "question": "(a) Draw a schematic sketch of a cyclotron, explain its working principle and deduce the expression for the kinetic energy of the ions accelerated. (b) Two long and parallel straight wires carrying currents of 2 A and 5 A in the opposite directions are separated by a distance of 1 cm. Find the nature and magnitude of the magnetic force between them.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Cyclotron"
     },
     {
       "id": "moving-charges-and-magnetism-262",
@@ -22355,18 +21681,6 @@
       "in_syllabus": true
     },
     {
-      "id": "moving-charges-and-magnetism-264",
-      "chapter": "Moving Charges and Magnetism",
-      "marks": 1,
-      "year": 2009,
-      "question": "Draw a schematic sketch of a cyclotron. Explain briefly how it works and how it is used to accelerate the charged particles. (i) Show that time period of ions in a cyclotron is independent of both the speed and radius of circular path. (ii) What is resonance condition? How is it used to accelerate the charged particles?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Cyclotron"
-    },
-    {
       "id": "moving-charges-and-magnetism-265",
       "chapter": "Moving Charges and Magnetism",
       "marks": 1,
@@ -22389,18 +21703,6 @@
       "in_syllabus": true
     },
     {
-      "id": "moving-charges-and-magnetism-267",
-      "chapter": "Moving Charges and Magnetism",
-      "marks": 1,
-      "year": 2008,
-      "question": "Draw a schematic diagram of a cyclotron. Explain its underlying principle and working, stating clearly the function of the electric and magnetic fields applied on a charged particle. Deduce an expression for the period of revolution and show that it does not depend on the speed of the charged particle.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Cyclotron"
-    },
-    {
       "id": "moving-charges-and-magnetism-268",
       "chapter": "Moving Charges and Magnetism",
       "marks": 1,
@@ -22421,18 +21723,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "moving-charges-and-magnetism-270",
-      "chapter": "Moving Charges and Magnetism",
-      "marks": 1,
-      "year": 2007,
-      "question": "Explain, with the help of a labelled diagram, the principle and construction of a cyclotron. Deduce an expression for the cyclotron frequency and show that it does not depend on the speed of the charged particle.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Cyclotron"
     },
     {
       "id": "moving-charges-and-magnetism-271",
@@ -22477,18 +21767,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "moving-charges-and-magnetism-275",
-      "chapter": "Moving Charges and Magnetism",
-      "marks": 1,
-      "year": 2004,
-      "question": "Derive an expression for the torque acting on a loop of N turns, area A, carrying current i, when held in a uniform magnetic field. With the help of a circuit, show how a moving coil galvanometer can be converted into an ammeter of given range. Write the necessary mathematical formula. Or Write an expression for the force experienced by a charged particle moving in a uniform magnetic field B. With the help of a diagram, explain the principle and working of a cyclotron. Show that cyclotron frequency does not depend on the speed of the particles.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Cyclotron"
     },
     {
       "id": "nuclei-1",
@@ -28926,30 +28204,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-73",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2019,
-      "question": "In sky wave mode of propagation, why is the frequency range of transmitting signals restricted to less than 30 MHz?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-74",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2019,
-      "question": "On what factors does the range of coverage in ground wave propagation depend?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-75",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -28983,18 +28237,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-78",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2019,
-      "question": "Define amplitude modulation in communication system.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-79",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -29004,54 +28246,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-80",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2019,
-      "question": "Define the term ’attenuation’ in communication system.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-81",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2019,
-      "question": "Write the function of receiver in communication system.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-82",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2019,
-      "question": "Why is ground wave transmission of signals restricted to a frequency of 1500 kHz?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-83",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2019,
-      "question": "Why are the antennas in space wave mode of propagation generally mounted at heights of many wavelengths above the ground?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-84",
@@ -29131,18 +28325,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-91",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2016,
-      "question": "Name the essential components of a communication system.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-92",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -29152,18 +28334,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-93",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2016,
-      "question": "A signal of 5 kHz frequency is amplitude modulated on a carrier wave of frequency 2 MHz. What are the frequencies of the side bands produced?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-94",
@@ -29186,30 +28356,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-96",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2014,
-      "question": "The carrier wave is given by C(t) = 2 sin(8$\\pi$t) volt. The modulating signal is a square wave as shown. Find modulation index.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-97",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2014,
-      "question": "The figure given below shows the block diagram of a generalized communication system. Identify the element labelled ’X’ and write its function.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-98",
@@ -29267,18 +28413,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-103",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2011,
-      "question": "What is the function of a ’Repeater’ in a communication system?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-104",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -29323,18 +28457,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-108",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2007,
-      "question": "Why is frequency modulation preferred over amplitude modulation for transmission of music?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-109",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -29344,18 +28466,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-110",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2005,
-      "question": "What should be the length of the dipole antenna for a carrier wave of frequency $3 \\times 10^{8}$ Hz?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-111",
@@ -29963,30 +29073,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-166",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2019,
-      "question": "Why a signal transmitted from a TV tower cannot be received beyond a certain dis- tance? Write the expression for the optimum separation between the receiving and the transmitting antenna.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-167",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2019,
-      "question": "Write the relation between the height of a TV antenna and the maximum range up to which signals transmitted by the antenna can be received. How is this expression modified in the case of line of sight communication by space waves? In which range of frequencies, is this mode of communication used?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-168",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -29998,42 +29084,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-169",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2019,
-      "question": "The frequencies of two side bands in an amplitude modulated wave are 640 kHz and 660 kHz respectively. Find the frequencies of the carrier and the modulating signals. Also obtain the value of the bandwidth required in amplitude modulation. OR A sinusoidal carrier voltage is amplitude modulated by a sinusoidal voltage of 10 kHz with modulation index 0.3. If the carrier frequency is 10 MHz and its amplitude is 40 V, calculate the frequency and amplitude of the two sidebands.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-170",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2019,
-      "question": "Draw a block diagram of a generalized communication system and write the functions of (i) a transmitter, and (ii) a receiver.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-171",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2018,
-      "question": "A carrier wave of peak voltage 15 V is used to transmit a message signal. Find the peak voltage of the modulating signal in order to have a modulation index of 60%.",
-      "answer": "Formula for modulation index 1 Finding the peak value of the modulating signal 1 We have, m = A A m c 1 Here, m = 60% = 3 5 ½ \\ Am =mAc = 3 5 15 $\\times$ V = 9 V ½ [CBSE Marking Scheme, 2018] SECTION -C",
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-172",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -30043,30 +29093,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-173",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2017,
-      "question": "Distinguish between a transducer and a repeater.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-174",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2017,
-      "question": "(i) What is the line of sight communication? (ii) Why is it not possible to use sky waves for transmission of TV signals? Upto what distance can a signal be transmitted using an antenna of height ’h’?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-175",
@@ -30102,18 +29128,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-178",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2016,
-      "question": "Define modulation index. Why is it kept low? What is the role of a bandpass filter?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-179",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -30123,30 +29137,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-180",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2016,
-      "question": "Why is base band signal not transmitted directly? Give any two reasons.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-181",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2015,
-      "question": "What is ground wave communication? Explain why this mode cannot be used for long distance communication using high frequencies.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-182",
@@ -30193,30 +29183,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-186",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2014,
-      "question": "Write the functions of the following in communication systems : (i) Receiver (ii) Demodulator",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-187",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2013,
-      "question": "Block diagram of a receiver is shown in the figure: (a) Identify ’X’ and ’Y ’. (b) Write their functions.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-188",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -30226,18 +29192,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-189",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2012,
-      "question": "Write two factors justifying the need of modulating a signal. A carrier wave of peak voltage 12 V is used to transmit a message signal. What should be the peak voltage of the modulating signal in order to have a modulation index of 75%?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-190",
@@ -30262,30 +29216,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-192",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2012,
-      "question": "In the given block diagram of a receiver, identify the boxes labelled as X and Y and write their functions. X -> Amplifier -> Detector -> Y -> Output’>",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-193",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2012,
-      "question": "Distinguish between ’Analog and Digital signals’. OR Mention the function of any two of the following used in communication system: (i) Transducer (ii) Repeater (iii) Transmitter (iv) Bandpass Filter",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-194",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -30295,18 +29225,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-195",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2012,
-      "question": "Figure shows a block diagram of a transmitter. Identify the boxes ’X’ and ’Y’ and write their functions. X -> Y -> Transmitting antenna’>",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-196",
@@ -30353,18 +29271,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-200",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2011,
-      "question": "(i) Define modulation index. (ii) Why is the amplitude of modulating signal kept less than the amplitude of carrier wave?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-201",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -30376,30 +29282,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-202",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2011,
-      "question": "For an amplitude modulated wave, the maximum amplitude is found to be 10 V while the minimum amplitude is 2 V. Calculate the modulation index. Why is modulation index generally kept less than one?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-203",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2011,
-      "question": "Draw a block diagram showing the important components in a communication system. What is the function of a transducer?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-204",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -30409,18 +29291,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-205",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2010,
-      "question": "Explain the function of a repeater in a communication system.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-206",
@@ -30445,18 +29315,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-208",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2009,
-      "question": "Why are high frequency carrier waves used for transmission?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-209",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -30466,18 +29324,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-210",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2009,
-      "question": "Write the function of (i) Transducer and (ii) Repeater in the context of communication system.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-211",
@@ -30511,30 +29357,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-214",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2008,
-      "question": "A transmitting antenna at the top of a tower has a height of 36 m and the height of the receiving antenna is 49 m. What is the maximum distance between them, for satisfactory communication in the LOS mode? (Radius of earth = 6400 km)",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-215",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2008,
-      "question": "Why do we need carrier waves of very high frequency in the modulation of signals? A carrier wave of peak voltage 20 V is used to transmit a message signal. What should be the peak voltage of the modulating signal, in order to have a modulation index of 80%?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-216",
@@ -31032,30 +29854,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-261",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2019,
-      "question": "If A and B represent the maximum and minimum amplitudes of an amplitude modulated wave, write the expression for the modulation index in terms of A & B.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-262",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2019,
-      "question": "A message signal of frequency 20 kHz and peak voltage 10 V is used to modulate a carrier of frequency 2 MHz and peak voltage of 15 V. Calculate the modulation index. Why the modulation index is generally kept less than one?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-263",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -31065,18 +29863,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-264",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2019,
-      "question": "A signal of low frequency fm is to be transmitted using a carrier wave of frequency fc. Derive the expression for the amplitude modulated wave and deduce expressions for the lower and upper sidebands produced. Hence, obtain the expression for modulation index.",
-      "answer": "Derive expression for amplitude modulated wave. 2 Deducing expression for lower and upper side bands. ½ Obtaining expression for modulation index. ½ Let a carrier wave be given by c(t) = Acsin wct where wc = 2$\\pi$fc And signal wave be m(t) sin wmt where wm = 2$\\pi$fm The modulated signal is cm(t) = (Ac + Am sin wmt) sin wct c t A A A t t c t A t A t m c m c m c m c c c c m ( ) ( sin )sin ( ) sin cos( ) = + = + - 1 2 $\\omega \\omega \\omega \\mu \\omega \\omega$ - + $\\mu \\omega \\omega$ A t c c m 2 cos( ) ½ The modulation index $\\mu$ = A A m c ½ Lower frequency band wc - wm ½ Upper frequency band wc + wm ½ [CBSE Marking Scheme, 2019]",
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-265",
@@ -31123,18 +29909,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-269",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2019,
-      "question": "(a) What do you mean by bandwidth of a signal? Give its importance. (b) Differentiate between Analog and Digital communication. (c) Write the functions of transducer and repeaters.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-270",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -31155,18 +29929,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-272",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2019,
-      "question": "(a) What is amplitude modulation? Draw a diagram showing an amplitude modulated wave obtained by modulation of a carrier sinusoidal wave on a modulating signal. (b) Define the terms (i) modulation index, and (ii) side bands. Mention the significance of side bands.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-273",
@@ -31235,18 +29997,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-279",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2018,
-      "question": "(a) Give three reasons why modulation of a message signal is necessary for long distance transmission. (b) Show graphically an audio signal, a carrier wave and an amplitude modulated wave.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-280",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -31256,18 +30006,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-281",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2017,
-      "question": "Define the term ’amplitude modulation’. Explain any two factors which justify the need for modulating a low frequency base-band signal.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-282",
@@ -31303,54 +30041,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-285",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2017,
-      "question": "(a) Define the term ’modulation index,’ used in communication system. Why is its value kept less than or equal to one? (b) A message signal of frequency 10 kHz and peak voltage of 10 V is used to modulate a carrier frequency 1 MHz and peak voltage 10 V. Determine the (i) modulation index, and (ii) side bands produced.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-286",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2017,
-      "question": "What is sky wave propagation? Which frequency range is suitable for sky wave propaga- tion and why? Over which range of frequencies can communication through free space using radio waves take place?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-287",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2017,
-      "question": "What is space wave propagation? Which systems of communication use space waves? What is ’radio horizon’ of a transmitting antenna of height h? Why is space wave propagation suitable for frequencies above 40 MHz?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-288",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2017,
-      "question": "(a) How is amplitude modulation achieved? (b) The frequencies of two side bands in an AM wave are 640 kHz and 660 kHz respectively. Find the frequencies of carrier and modulating signal. What is the bandwidth required for amplitude modulation?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-289",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -31360,18 +30050,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-290",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2017,
-      "question": "Draw a block diagram of a generalized communication system. Write the functions of each of the following: (a) Transmitter (b) Channel (c) Receiver",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-291",
@@ -31440,18 +30118,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-297",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2016,
-      "question": "(i) Which mode of propagation is used by shortwave broadcast services having frequency range from a few MHz upto 30 MHz? Explain diagrammatically how long distance communication can be achieved by this mode. (ii) Why is there an upper limit to frequency of waves used in this mode?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-298",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -31518,18 +30184,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-304",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2016,
-      "question": "What is space wave propagation? State the factors which limit its range of propagation. Derive an expression for the maximum line of sight distance between two antennas for space wave propagation.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-305",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -31552,18 +30206,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-307",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2016,
-      "question": "Mention any three applications of the internet. Explain one of these in detail.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-308",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -31584,18 +30226,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-310",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2015,
-      "question": "(a) What are the three basic units in communication systems? Write briefly the function of each of these. (b) Write any three applications of the internet used in communication systems.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-311",
@@ -31631,18 +30261,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-314",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2014,
-      "question": "When Sunita, a class XII student, came to know that her parents are planning to rent out the top floor of their house to a mobile company she protested. She tried hard to convince her parents that this move would be a health hazard. Ultimately her parents agreed : (1) In what way can the setting up of transmission tower by a mobile company in a residential colony prove to be injurious to health ? (2) By objecting to this move of her parents, what value did Sunita display ? (3) Estimate the range of e.m. waves which can be transmitted by an antenna of height 20 m. (Given radius of the earth = 6400 km)",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-315",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -31654,30 +30272,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-316",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2014,
-      "question": "Write two basic modes of communication. Explain the process of amplitude modula- tion. Draw a schematic sketch showing how amplitude modulated signal is obtained by superposing a modulating signal over a sinusoidal carrier wave.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-317",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2013,
-      "question": "Write three important factors which justify the need of modulating a message signal. Show diagrammatically how an amplitude modulated wave is obtained when a modulating signal is superimposed on a carrier wave.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-318",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -31687,54 +30281,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-319",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2012,
-      "question": "Which mode of propagation is used by short wave broadcast services having frequency range from a few MHz upto 30 MHz? Explain diagrammatically how long distance communication can be achieved by this mode. Why is there an upper limit to frequency of waves used in this mode?",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-320",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2012,
-      "question": "Mention three different modes of propagation used in communication system. Explain with the help of a diagram how long distance communication can be achieved by iono- spheric reflection of radio waves.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-321",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2012,
-      "question": "Write any two factors which justify the need for modulating a signal. Draw a diagram showing an amplitude modulated wave by superposing a modulating signal over a sinusoidal carrier wave.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-322",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2012,
-      "question": "Define modulation index. Give its physical significance. For an amplitude modulated wave, the maximum amplitude is found to be 10 V while the minimum amplitude is 2 V. Determine the modulation index $\\mu$.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-323",
@@ -31792,30 +30338,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-328",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2010,
-      "question": "What is space wave propagation? Give two examples of communication systems which use space wave mode. A TV tower is 80 m tall. Calculate the maximum distance upto which the signal transmitted from the tower can be received.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
-      "id": "semiconductor-electronics-329",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2009,
-      "question": "Distinguish between sky wave and space wave propagation. Give a brief description with the help of suitable diagrams indicating how these waves are propagated.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-330",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -31838,18 +30360,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-332",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2008,
-      "question": "Draw a plot of the amplitude versus $\\omega$ for an amplitude modulated wave. Define modula- tion index. State its importance for effective amplitude modulation.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-333",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -31859,18 +30369,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-334",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2008,
-      "question": "What does the term ’LOS communication’ mean? Name the types of waves that are used for this communication. Give typical examples, with the help of a suitable figure, of communication systems that use space mode propagation.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-335",
@@ -31972,18 +30470,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-344",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2006,
-      "question": "Define the term modulation. Name three different types of modulation used for a message signal using a sinusoidal continuous carrier wave. Explain the meaning of any one of these.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-345",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -31993,18 +30479,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-346",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2006,
-      "question": "Define the term ’critical frequency’ in relation to sky wave propagation of electromagnetic waves. On a particular day, the maximum frequency reflected from the ionosphere is 10 MHz. On another day, it was found to decrease to 8 MHz. Calculate the ratio of the maximum electron densities of the ionosphere on the two days.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-347",
@@ -32084,18 +30558,6 @@
       "in_syllabus": true
     },
     {
-      "id": "semiconductor-electronics-354",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2004,
-      "question": "With the help of a block diagram, explain the principle of an optical communication system. Give its two advantages over cable communication system. Or With the help of relevant diagrams, explain the following terms: (i) Pulse-position modulation (PPM) (ii) Pulse-duration modulation (PDM)",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
-    },
-    {
       "id": "semiconductor-electronics-355",
       "chapter": "Semiconductor Electronics",
       "marks": 1,
@@ -32105,18 +30567,6 @@
       "bookmarked": false,
       "solved": false,
       "in_syllabus": true
-    },
-    {
-      "id": "semiconductor-electronics-356",
-      "chapter": "Semiconductor Electronics",
-      "marks": 1,
-      "year": 2003,
-      "question": "Define Antenna. Write a short note on Antenna. Name two types of antenna.",
-      "answer": null,
-      "bookmarked": false,
-      "solved": false,
-      "in_syllabus": false,
-      "removed_reason": "Communication Systems"
     },
     {
       "id": "semiconductor-electronics-357",
@@ -34869,6 +33319,6 @@
       "in_syllabus": true
     }
   ],
-  "total": 3115,
+  "total": 2987,
   "matched_answers": 348
 }
