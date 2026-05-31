@@ -90,6 +90,14 @@ body {
 /* KaTeX */
 .math-content .katex { font-size: 1em; }
 .math-content .katex-display { margin: 0.5em 0; overflow-x: auto; }
+.math-content .katex-display-block { display: block; overflow-x: auto; margin: 0.5em 0; }
+.math-content .katex-display-block .katex { font-size: 1.1em; }
+/* Inline KaTeX shouldn't break line height */
+.math-content .katex-html { vertical-align: middle; }
+/* Ohm symbol in non-math context */
+.math-content .ohm::after { content: "Ω"; }
+/* Better spacing around operators */
+.math-content br { line-height: 1.8; }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
