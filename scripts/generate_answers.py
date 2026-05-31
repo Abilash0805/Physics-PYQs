@@ -7,12 +7,12 @@ Collects all answers in memory, writes pyq_data.json only once at the end.
 import json, subprocess, sys, time, re
 
 DATA_PATH = 'src/data/pyq_data.json'
-BATCH_SIZE = 30
+BATCH_SIZE = 8
 
 def call_claude(prompt: str) -> str:
     result = subprocess.run(
         ['claude', '-p', prompt, '--output-format', 'text'],
-        capture_output=True, text=True, timeout=120
+        capture_output=True, text=True, timeout=60
     )
     if result.returncode != 0:
         raise RuntimeError(f"Claude error: {result.stderr[:200]}")
