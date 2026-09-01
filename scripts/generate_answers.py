@@ -29,6 +29,7 @@ import re
 import subprocess
 import sys
 import threading
+import time
 from concurrent.futures import ThreadPoolExecutor
 
 DATA_PATH = 'src/data/pyq_data.json'
@@ -157,10 +158,47 @@ class Cache:
                                         ensure_ascii=False) + '\n')
 
 
-def run_batch(batch: list[dict], cache: Cache, attempts: int = 3) -> int:
+class Breaker:
+    """Stops the run when the CLI starts refusing every call.
+
+    Hitting a usage limit makes `claude -p` exit non-zero with an empty
+    stderr, which is indistinguishable from any other failure. Without a
+    breaker each remaining batch still burns its full retry budget, so a
+    limit reached early chews through the whole queue in minutes and the
+    run ends with nothing but failures. Tripping instead leaves the cache
+    intact to resume from once the limit resets.
+    """
+
+    LIMIT = 10
+
+    def __init__(self) -> None:
+        self.lock = threading.Lock()
+        self.consecutive = 0
+        self.tripped = False
+
+    def record(self, ok: bool) -> None:
+        with self.lock:
+            if ok:
+                self.consecutive = 0
+                return
+            self.consecutive += 1
+            if self.consecutive >= self.LIMIT and not self.tripped:
+                self.tripped = True
+                print(f'\n  stopping: {self.LIMIT} batches failed in a row - '
+                      'the CLI is refusing calls (usage limit reached?).\n'
+                      '  Cached answers are kept; rerun to resume.\n',
+                      flush=True)
+
+
+def run_batch(batch: list[dict], cache: Cache, breaker: Breaker,
+              attempts: int = 3) -> int:
     """Answer one batch, keeping only what round-trips and parses."""
+    if breaker.tripped:
+        return 0
     wanted = {q['id'] for q in batch}
     for attempt in range(attempts):
+        if breaker.tripped:
+            return 0
         try:
             raw = call_claude(make_prompt(batch), timeout=240 + 60 * attempt)
             got = {k: v for k, v in parse_blocks(raw).items() if k in wanted}
@@ -171,10 +209,14 @@ def run_batch(batch: list[dict], cache: Cache, attempts: int = 3) -> int:
             good = {ids[i]: got[ids[i]] for i in range(len(ids)) if i in ok}
             if good:
                 cache.add(good)
+                breaker.record(True)
                 return len(good)
         except Exception as exc:                      # noqa: BLE001
             if attempt == attempts - 1:
                 print(f'  batch {batch[0]["id"]} failed: {exc}', flush=True)
+            else:
+                time.sleep(5 * (attempt + 1) ** 2)
+    breaker.record(False)
     return 0
 
 
@@ -222,12 +264,15 @@ def main() -> None:
     done = 0
     lock = threading.Lock()
 
+    breaker = Breaker()
+
     def work(batch: list[dict]) -> None:
         nonlocal done
-        n = run_batch(batch, cache)
+        n = run_batch(batch, cache, breaker)
         with lock:
             done += n
-            print(f'  {done}/{len(todo)} answered', flush=True)
+            if n:
+                print(f'  {done}/{len(todo)} answered', flush=True)
 
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         list(pool.map(work, batches))
