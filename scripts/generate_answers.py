@@ -1,90 +1,240 @@
 #!/usr/bin/env python3
 """
-Generate exam-ready answers for all questions missing answers.
-Uses the claude CLI in batch mode.
-Collects all answers in memory, writes pyq_data.json only once at the end.
+Write exam-ready answers for the question bank, using the claude CLI.
+
+Answers are generated from each question's own text and cached by question
+id, so a run can be interrupted and resumed without losing work or paying
+for the same answer twice.
+
+Two details are load-bearing:
+
+*  Answers come back in a delimited block format, not JSON. Every answer is
+   dense with LaTeX, and asking for JSON means asking the model to escape
+   every backslash correctly in a 2,000-question run - `\\frac` is a broken
+   JSON string, and one bad escape loses the whole batch.
+
+*  Each answer is parsed by KaTeX before it is accepted. A malformed maths
+   run blanks the answer in the UI, so a batch that fails validation is
+   retried rather than stored.
+
+Usage:
+    scripts/generate_answers.py [--limit N] [--workers N] [--missing-only]
 """
-import json, subprocess, sys, time, re
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import re
+import subprocess
+import sys
+import threading
+from concurrent.futures import ThreadPoolExecutor
 
 DATA_PATH = 'src/data/pyq_data.json'
-BATCH_SIZE = 8
+CACHE_PATH = 'scripts/.answers_cache.jsonl'
 
-def call_claude(prompt: str) -> str:
-    result = subprocess.run(
-        ['claude', '-p', prompt, '--output-format', 'text'],
-        capture_output=True, text=True, timeout=60
-    )
-    if result.returncode != 0:
-        raise RuntimeError(f"Claude error: {result.stderr[:200]}")
-    return result.stdout.strip()
+BEGIN = re.compile(r'^<<<ID:(\S+)>>>\s*$')
+END = '<<<END>>>'
 
-def make_prompt(questions: list) -> str:
-    lines = [
-        "You are a CBSE Class 12 Physics expert. For each 1-mark MCQ below, provide the correct answer.",
-        "",
-        "Rules:",
-        "- State the correct option like: (D) qE0x — is correct.",
-        "- Add 1 sentence of reasoning with the key concept or formula.",
-        "- Use LaTeX math in $...$ delimiters (e.g. $KE = qE_0x$).",
-        "- Keep each answer under 50 words.",
-        "- Output ONLY a raw JSON array (no markdown fences): [{\"id\": \"...\", \"answer\": \"...\"}]",
-        "",
-    ]
-    for q in questions:
-        lines.append(f'ID: {q["id"]}')
+STYLE = """\
+You are a CBSE Class 12 Physics examiner writing model answers for the \
+2026-27 board syllabus. Write the answer a student should give to earn full \
+marks.
+
+Length and shape follow the mark value:
+  1 mark  - a multiple-choice question: begin exactly "Option (X) is correct." \
+then one sentence giving the reason or formula. A fill-in-the-blank or \
+one-word question: give the answer, then at most one short sentence.
+  2 marks - 2 to 4 sentences, or two labelled points. Include the governing \
+formula.
+  3 marks - state the formula, substitute, and give the result with units; or \
+three labelled points. Roughly 60-110 words.
+  4 marks - a case study: answer each sub-part on its own line, labelled \
+(i), (ii), ... as the question labels them.
+  5 marks - cover each part the question asks for, labelled (a), (b), ... \
+Give the key steps of any derivation, not just the final line. 120-180 words.
+
+Rules:
+- Answer the question actually asked. If it has parts, answer every part.
+- Put every symbol, formula and number in LaTeX between single dollar signs: \
+$v_d = eE\\tau/m$, $1.6 \\times 10^{-19}$ C. Never use display math, \
+\\begin{...} environments, or double dollars.
+- Use only LaTeX that KaTeX supports. Keep it simple.
+- When a question depends on a figure that is not provided, answer the \
+physics it is testing in general terms; do not say the figure is missing.
+- Write the answer only. No preamble, no restating the question, no headings.
+- Where the answer has steps or parts, start each on a new line so it renders \
+as separate steps.
+"""
+
+
+def make_prompt(batch: list[dict]) -> str:
+    lines = [STYLE, '', f'Write an answer for each of the {len(batch)} '
+             'questions below.', '',
+             'Return them in exactly this format, and nothing else:', '',
+             '<<<ID:the-question-id>>>', 'the answer text', END, '',
+             'Repeat that block for every question, in the order given.', '']
+    for q in batch:
+        lines.append(f'<<<ID:{q["id"]}>>>')
         lines.append(f'Chapter: {q["chapter"]}')
-        lines.append(f'Q: {q["question"]}')
-        lines.append("")
+        lines.append(f'Marks: {q["marks"]} ({q["type"]})')
+        lines.append(f'Question: {q["question"]}')
+        lines.append(END)
+        lines.append('')
     return '\n'.join(lines)
 
-def parse_response(text: str) -> list:
-    text = re.sub(r'^```(?:json)?\s*', '', text.strip())
-    text = re.sub(r'\s*```$', '', text)
-    return json.loads(text.strip())
 
-def main():
-    with open(DATA_PATH, 'r', encoding='utf-8') as f:
-        data = json.load(f)
+def parse_blocks(text: str) -> dict[str, str]:
+    out: dict[str, str] = {}
+    cur: str | None = None
+    buf: list[str] = []
+    for line in text.splitlines():
+        m = BEGIN.match(line.strip())
+        if m:
+            cur, buf = m.group(1), []
+            continue
+        if line.strip() == END:
+            if cur:
+                body = '\n'.join(buf).strip()
+                if body:
+                    out[cur] = body
+            cur, buf = None, []
+            continue
+        if cur is not None:
+            buf.append(line)
+    return out
 
-    missing = [q for q in data['questions'] if q.get('in_syllabus', True) and not q.get('answer')]
-    print(f"Questions needing answers: {len(missing)}")
 
-    q_by_id = {q['id']: q for q in data['questions']}
-    answers_collected = {}
-    total_batches = (len(missing) + BATCH_SIZE - 1) // BATCH_SIZE
+def katex_ok(answers: list[str]) -> set[int]:
+    """Indices whose maths KaTeX parses. Runs one node process per batch."""
+    checker = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                           'katex_check.js')
+    proc = subprocess.run(['node', checker], input=json.dumps(answers),
+                          capture_output=True, text=True, timeout=120)
+    if proc.returncode != 0:
+        raise RuntimeError(f'katex check failed: {proc.stderr[:200]}')
+    return set(json.loads(proc.stdout)['ok'])
 
-    for batch_num in range(total_batches):
-        batch = missing[batch_num * BATCH_SIZE:(batch_num + 1) * BATCH_SIZE]
-        print(f"Batch {batch_num+1}/{total_batches} ({len(batch)} questions)...", end=' ', flush=True)
 
-        for attempt in range(3):
-            try:
-                prompt = make_prompt(batch)
-                response = call_claude(prompt)
-                items = parse_response(response)
-                for item in items:
-                    if item.get('id') and item.get('answer'):
-                        answers_collected[item['id']] = item['answer'].strip()
-                print(f"OK ({len(items)} answers, total {len(answers_collected)})")
-                break
-            except Exception as e:
-                print(f"attempt {attempt+1} failed: {e}")
-                if attempt < 2:
-                    time.sleep(4 * (attempt + 1))
-                else:
-                    print(f"  SKIPPED batch {batch_num+1}")
+def call_claude(prompt: str, timeout: int) -> str:
+    proc = subprocess.run(
+        ['claude', '-p', prompt, '--output-format', 'text'],
+        capture_output=True, text=True, timeout=timeout)
+    if proc.returncode != 0:
+        raise RuntimeError(f'claude exited {proc.returncode}: '
+                           f'{proc.stderr[:200]}')
+    return proc.stdout
 
-    # Apply all answers at once
-    applied = 0
-    for qid, ans in answers_collected.items():
-        if qid in q_by_id:
-            q_by_id[qid]['answer'] = ans
-            applied += 1
 
-    with open(DATA_PATH, 'w', encoding='utf-8') as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+class Cache:
+    """Append-only answer cache, so an interrupted run resumes where it was."""
 
-    print(f"\nDone! Applied {applied} answers. Saved to {DATA_PATH}")
+    def __init__(self, path: str) -> None:
+        self.path = path
+        self.lock = threading.Lock()
+        self.data: dict[str, str] = {}
+        if os.path.exists(path):
+            with open(path, encoding='utf-8') as fh:
+                for line in fh:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        rec = json.loads(line)
+                    except json.JSONDecodeError:
+                        continue
+                    self.data[rec['id']] = rec['answer']
+
+    def add(self, items: dict[str, str]) -> None:
+        with self.lock:
+            with open(self.path, 'a', encoding='utf-8') as fh:
+                for qid, ans in items.items():
+                    if qid in self.data:
+                        continue
+                    self.data[qid] = ans
+                    fh.write(json.dumps({'id': qid, 'answer': ans},
+                                        ensure_ascii=False) + '\n')
+
+
+def run_batch(batch: list[dict], cache: Cache, attempts: int = 3) -> int:
+    """Answer one batch, keeping only what round-trips and parses."""
+    wanted = {q['id'] for q in batch}
+    for attempt in range(attempts):
+        try:
+            raw = call_claude(make_prompt(batch), timeout=240 + 60 * attempt)
+            got = {k: v for k, v in parse_blocks(raw).items() if k in wanted}
+            if not got:
+                continue
+            ids = list(got)
+            ok = katex_ok([got[i] for i in ids])
+            good = {ids[i]: got[ids[i]] for i in range(len(ids)) if i in ok}
+            if good:
+                cache.add(good)
+                return len(good)
+        except Exception as exc:                      # noqa: BLE001
+            if attempt == attempts - 1:
+                print(f'  batch {batch[0]["id"]} failed: {exc}', flush=True)
+    return 0
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--limit', type=int, default=0,
+                    help='only process this many questions (for a trial run)')
+    ap.add_argument('--batch', type=int, default=6)
+    ap.add_argument('--workers', type=int, default=4)
+    ap.add_argument('--missing-only', action='store_true',
+                    help='keep existing answers instead of rewriting them')
+    ap.add_argument('--apply', action='store_true',
+                    help='write the cached answers into the dataset and stop')
+    args = ap.parse_args()
+
+    with open(DATA_PATH, encoding='utf-8') as fh:
+        data = json.load(fh)
+    cache = Cache(CACHE_PATH)
+
+    if args.apply:
+        applied = 0
+        for q in data['questions']:
+            ans = cache.data.get(q['id'])
+            if ans:
+                q['answer'] = ans
+                applied += 1
+        data['matched_answers'] = sum(1 for q in data['questions']
+                                      if q.get('answer'))
+        with open(DATA_PATH, 'w', encoding='utf-8') as fh:
+            json.dump(data, fh, ensure_ascii=False, indent=2)
+        print(f'applied {applied} answers -> {DATA_PATH}')
+        return
+
+    todo = [q for q in data['questions'] if q['id'] not in cache.data]
+    if args.missing_only:
+        todo = [q for q in todo if not q.get('answer')]
+    if args.limit:
+        todo = todo[:args.limit]
+
+    print(f'cached {len(cache.data)} | to answer {len(todo)}')
+    if not todo:
+        return
+
+    batches = [todo[i:i + args.batch] for i in range(0, len(todo), args.batch)]
+    done = 0
+    lock = threading.Lock()
+
+    def work(batch: list[dict]) -> None:
+        nonlocal done
+        n = run_batch(batch, cache)
+        with lock:
+            done += n
+            print(f'  {done}/{len(todo)} answered', flush=True)
+
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        list(pool.map(work, batches))
+
+    print(f'\ncached total: {len(cache.data)}')
+    print(f'run scripts/generate_answers.py --apply to write them in')
+
 
 if __name__ == '__main__':
     main()

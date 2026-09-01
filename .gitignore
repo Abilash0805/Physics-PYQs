@@ -40,3 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 __pycache__/
+
+# generated answer cache (resumable run state, not source)
+scripts/.answers_cache.jsonl
