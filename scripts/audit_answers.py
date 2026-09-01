@@ -23,7 +23,9 @@ from collections import Counter
 DATA_PATH = 'src/data/pyq_data.json'
 
 OPTION_IN_Q = re.compile(r'\(([A-Da-d])\)')
-OPTION_IN_A = re.compile(r'^\s*Option\s*\(([A-Da-d])\)\s*is\s*correct', re.I)
+# answers usually restate the option before "is correct", so allow text
+# between the two - matching how AnswerRenderer detects the option
+OPTION_IN_A = re.compile(r'^\s*Option\s*\(([A-Da-d])\)\s*(.*?)\s*is\s+correct', re.I)
 LEAKED = ('<<<ID:', '<<<END>>>', 'Chapter:', 'Marks:')
 HEDGES = (
     'figure is not provided', 'figure is missing', 'no figure',
@@ -33,6 +35,27 @@ HEDGES = (
 
 # a five-mark answer that fits in a tweet is not a five-mark answer
 MIN_CHARS = {1: 20, 2: 80, 3: 140, 4: 140, 5: 220}
+
+
+def mcq_options(question: str) -> set[str]:
+    """The option letters a question offers, empty if it is not an MCQ.
+
+    `(a)`, `(b)`, `(c)` also label the parts of a structured question, so
+    the markers alone would make "Can a transformer step up dc power? (a)
+    ... (b) ... (c) ..." look like a multiple-choice question and its
+    perfectly good part-by-part answer look like a miss. Real options run
+    in order from (a) or (A) and are printed together at the end.
+    """
+    found = [(m.start(), m.group(1).lower())
+             for m in re.finditer(r'\(([A-Da-d])\)', question)]
+    if len(found) < 3:
+        return set()
+    letters = [f[1] for f in found]
+    if letters != [chr(ord('a') + i) for i in range(len(letters))]:
+        return set()
+    if found[-1][0] - found[0][0] > 400:
+        return set()
+    return {c.upper() for c in letters}
 
 
 def katex_failures(answers: list[str]) -> list[int]:
@@ -77,7 +100,7 @@ def main() -> None:
             flag(f'too short for {q["marks"]} marks', q, f'{len(ans)} chars')
 
         # An MCQ's answer must name one of the options the question offers.
-        opts = {m.upper() for m in OPTION_IN_Q.findall(q['question'])}
+        opts = mcq_options(q['question'])
         is_mcq = len(opts) >= 3
         m = OPTION_IN_A.match(ans)
         if is_mcq and not m:
