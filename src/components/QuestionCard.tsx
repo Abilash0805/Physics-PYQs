@@ -106,6 +106,19 @@ export default function QuestionCard({ question, index = 0, showChapter = true }
             <Badge variant={marksColor as "blue" | "green" | "purple" | "amber" | "rose"}>
               {question.marks} {question.marks === 1 ? "Mark" : "Marks"}
             </Badge>
+            {question.type && (
+              <span
+                className="text-xs font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded-full"
+                title={`Section ${question.type}`}
+              >
+                {question.type}
+              </span>
+            )}
+            {question.paper && (
+              <span className="text-xs text-gray-400 dark:text-gray-500">
+                {question.paper}
+              </span>
+            )}
             {showChapter && (
               <span className="text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded-full">
                 {question.chapter}
