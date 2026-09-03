@@ -96,7 +96,10 @@ def main() -> None:
                 flag('hedging / refusal text', q, h)
                 break
 
-        if len(ans) < MIN_CHARS.get(q['marks'], 20):
+        # A fill-in-the-blank is answered by the missing word, so "rectify"
+        # is a complete one-mark answer and not a truncated one.
+        blank = '___' in q['question']
+        if not blank and len(ans) < MIN_CHARS.get(q['marks'], 20):
             flag(f'too short for {q["marks"]} marks', q, f'{len(ans)} chars')
 
         # An MCQ's answer must name one of the options the question offers.
