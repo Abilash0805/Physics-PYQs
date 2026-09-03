@@ -79,14 +79,22 @@ function MathRenderer({ text, className = "" }: MathRendererProps) {
 
       let html = processed;
 
+      // Rendered maths is parked behind placeholders while the rest of the
+      // string is processed. KaTeX draws a radical as an SVG whose path data
+      // contains newlines, so the newline → <br/> pass below would otherwise
+      // inject markup into `d` and the path would silently draw nothing —
+      // every square root rendering as a blank gap.
+      const rendered: string[] = [];
+      const stash = (markup: string) => `@@KATEX${rendered.push(markup) - 1}@@`;
+
       // Display math first
       html = html.replace(DISPLAY_RE, (_, math) => {
         try {
-          return `<span class="katex-display-block">${katex.renderToString(math.trim(), {
+          return stash(`<span class="katex-display-block">${katex.renderToString(math.trim(), {
             displayMode: true,
             throwOnError: false,
             trust: false,
-          })}</span>`;
+          })}</span>`);
         } catch {
           return `<span class="math-error bg-red-50 text-red-500 text-xs px-1 rounded">${_}</span>`;
         }
@@ -95,11 +103,11 @@ function MathRenderer({ text, className = "" }: MathRendererProps) {
       // Inline math
       html = html.replace(INLINE_RE, (_, math) => {
         try {
-          return katex.renderToString(math.trim(), {
+          return stash(katex.renderToString(math.trim(), {
             displayMode: false,
             throwOnError: false,
             trust: false,
-          });
+          }));
         } catch {
           return `<span class="math-error bg-red-50 text-red-500 text-xs px-1 rounded">${_}</span>`;
         }
@@ -107,6 +115,8 @@ function MathRenderer({ text, className = "" }: MathRendererProps) {
 
       // Newlines → line breaks
       html = html.replace(/\n/g, "<br/>");
+
+      html = html.replace(/@@KATEX(\d+)@@/g, (_, i) => rendered[Number(i)]);
 
       if (!cancelled) {
         el.innerHTML = html;

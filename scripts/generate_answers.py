@@ -27,6 +27,7 @@ import json
 import os
 import re
 import subprocess
+import tempfile
 import sys
 import threading
 import time
@@ -119,9 +120,20 @@ def katex_ok(answers: list[str]) -> set[int]:
 
 
 def call_claude(prompt: str, timeout: int) -> str:
+    """One answer batch.
+
+    Writing answers needs no tools and no MCP servers, but the CLI would
+    otherwise start every configured MCP server and load the repository's
+    CLAUDE.md on each of the several hundred calls a full run makes. The
+    flags below drop that startup work, and running from a neutral
+    directory keeps the project instructions out of the prompt - they are
+    about editing this codebase, not about physics.
+    """
     proc = subprocess.run(
-        ['claude', '-p', prompt, '--output-format', 'text'],
-        capture_output=True, text=True, timeout=timeout)
+        ['claude', '-p', prompt, '--output-format', 'text',
+         '--strict-mcp-config', '--tools', ''],
+        capture_output=True, text=True, timeout=timeout,
+        cwd=tempfile.gettempdir())
     if proc.returncode != 0:
         raise RuntimeError(f'claude exited {proc.returncode}: '
                            f'{proc.stderr[:200]}')
