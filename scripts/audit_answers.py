@@ -55,6 +55,12 @@ def mcq_options(question: str) -> set[str]:
         return set()
     if found[-1][0] - found[0][0] > 400:
         return set()
+    # "(a) Can a transformer step up dc power? (b) Can a step up transformer
+    # work as a step down one?" numbers the parts of a question. An option is
+    # a candidate answer, so it never asks anything itself.
+    bodies = re.findall(r'\([A-Da-d]\)([^()]*)', question)
+    if any('?' in b for b in bodies):
+        return set()
     return {c.upper() for c in letters}
 
 
