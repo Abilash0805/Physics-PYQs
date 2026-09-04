@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Node tooling for building the question bank, not application source -
+    // it runs under plain node, where `require` is the correct import form.
+    "scripts/**",
   ]),
 ]);
 

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   BookmarkIcon,
@@ -16,7 +17,8 @@ import { cn } from "@/lib/utils";
 import type { Question } from "@/types";
 import MathRenderer from "@/components/MathRenderer";
 import AnswerRenderer from "@/components/AnswerRenderer";
-import { toggleBookmark, isBookmarked, toggleSolved, isSolved } from "@/lib/storage";
+import { toggleBookmark, toggleSolved, BOOKMARKS_KEY, SOLVED_KEY, BOOKMARKS_EVENT, SOLVED_EVENT } from "@/lib/storage";
+import { useStoredSet } from "@/hooks/useStoredSet";
 
 interface QuestionCardProps {
   question: Question;
@@ -46,26 +48,19 @@ function getYearColor(year: number) {
 
 export default function QuestionCard({ question, index = 0, showChapter = true }: QuestionCardProps) {
   const [answerVisible, setAnswerVisible] = useState(false);
-  const [bookmarked, setBookmarked] = useState(false);
-  const [solved, setSolved] = useState(false);
+  const bookmarked = useStoredSet(BOOKMARKS_KEY, BOOKMARKS_EVENT).has(question.id);
+  const solved = useStoredSet(SOLVED_KEY, SOLVED_EVENT).has(question.id);
 
   const hasRealAnswer = question.answer && !question.answer.startsWith("Refer to the official CBSE");
 
-  useEffect(() => {
-    setBookmarked(isBookmarked(question.id));
-    setSolved(isSolved(question.id));
-  }, [question.id]);
-
   const handleBookmark = () => {
-    const next = toggleBookmark(question.id);
-    setBookmarked(next);
-    window.dispatchEvent(new CustomEvent("bookmarks-changed"));
+    toggleBookmark(question.id);
+    window.dispatchEvent(new CustomEvent(BOOKMARKS_EVENT));
   };
 
   const handleSolved = () => {
-    const next = toggleSolved(question.id);
-    setSolved(next);
-    window.dispatchEvent(new CustomEvent("solved-changed"));
+    toggleSolved(question.id);
+    window.dispatchEvent(new CustomEvent(SOLVED_EVENT));
   };
 
   const marksColor = MARKS_COLOR[question.marks] ?? "blue";
@@ -106,6 +101,19 @@ export default function QuestionCard({ question, index = 0, showChapter = true }
             <Badge variant={marksColor as "blue" | "green" | "purple" | "amber" | "rose"}>
               {question.marks} {question.marks === 1 ? "Mark" : "Marks"}
             </Badge>
+            {question.type && (
+              <span
+                className="text-xs font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded-full"
+                title={`Section ${question.type}`}
+              >
+                {question.type}
+              </span>
+            )}
+            {question.paper && (
+              <span className="text-xs text-gray-400 dark:text-gray-500">
+                {question.paper}
+              </span>
+            )}
             {showChapter && (
               <span className="text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded-full">
                 {question.chapter}
@@ -152,6 +160,24 @@ export default function QuestionCard({ question, index = 0, showChapter = true }
         <div className="text-sm text-gray-800 dark:text-gray-200 leading-relaxed mb-4">
           <MathRenderer text={question.question} />
         </div>
+
+        {/* Diagrams the question refers to, lifted from the source paper */}
+        {question.figures && question.figures.length > 0 && (
+          <div className="mb-4 flex flex-wrap gap-3">
+            {question.figures.map((fig) => (
+              <Image
+                key={fig.src}
+                src={fig.src}
+                width={fig.width}
+                height={fig.height}
+                alt="Figure accompanying the question"
+                loading="lazy"
+                sizes="(max-width: 640px) 100vw, 400px"
+                className="max-w-full h-auto rounded-lg border border-gray-200 bg-white p-2 dark:border-gray-700"
+              />
+            ))}
+          </div>
+        )}
 
         {/* Answer toggle — always shown */}
         <div>

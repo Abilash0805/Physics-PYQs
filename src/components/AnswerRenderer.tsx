@@ -13,9 +13,14 @@ function parseAnswerSegments(text: string): { type: "option" | "step" | "note" |
   const segments: { type: "option" | "step" | "note" | "formula" | "plain"; content: string; label?: string }[] = [];
 
   // Detect MCQ option answer
-  const optionMatch = text.match(/^Option\s*\(([A-Da-d])\)\s+is\s+correct\.?\s*/i);
+  // Answers usually restate the option they pick — "Option (B) $5\sqrt{2}$ V is
+  // correct." — so the option text is captured between the letter and "is
+  // correct" rather than requiring the two to be adjacent. The capture is
+  // non-greedy and `.` skips newlines, so a later "is correct" in the
+  // reasoning cannot swallow the rest of the answer.
+  const optionMatch = text.match(/^Option\s*\(([A-Da-d])\)\s*(.*?)\s*is\s+correct\.?\s*/i);
   if (optionMatch) {
-    segments.push({ type: "option", content: `Option (${optionMatch[1].toUpperCase()}) is correct`, label: optionMatch[1].toUpperCase() });
+    segments.push({ type: "option", content: optionMatch[2] ?? "", label: optionMatch[1].toUpperCase() });
     text = text.slice(optionMatch[0].length).trim();
   }
 
@@ -87,6 +92,11 @@ export default function AnswerRenderer({ answer, marks }: AnswerRendererProps) {
                 {seg.label}
               </span>
               <span className="text-sm font-semibold text-green-700 dark:text-green-400">Correct Answer</span>
+              {seg.content && (
+                <span className="text-sm text-gray-800 dark:text-gray-200 min-w-0">
+                  <MathRenderer text={seg.content} />
+                </span>
+              )}
             </div>
           );
         }

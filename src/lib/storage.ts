@@ -1,7 +1,10 @@
 "use client";
 
-const BOOKMARKS_KEY = "pyq_bookmarks";
-const SOLVED_KEY = "pyq_solved";
+export const BOOKMARKS_KEY = "pyq_bookmarks";
+export const SOLVED_KEY = "pyq_solved";
+
+export const BOOKMARKS_EVENT = "bookmarks-changed";
+export const SOLVED_EVENT = "solved-changed";
 
 export function getBookmarks(): Set<string> {
   if (typeof window === "undefined") return new Set();
