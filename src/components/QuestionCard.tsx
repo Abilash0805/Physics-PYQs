@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   BookmarkIcon,
@@ -159,6 +160,24 @@ export default function QuestionCard({ question, index = 0, showChapter = true }
         <div className="text-sm text-gray-800 dark:text-gray-200 leading-relaxed mb-4">
           <MathRenderer text={question.question} />
         </div>
+
+        {/* Diagrams the question refers to, lifted from the source paper */}
+        {question.figures && question.figures.length > 0 && (
+          <div className="mb-4 flex flex-wrap gap-3">
+            {question.figures.map((fig) => (
+              <Image
+                key={fig.src}
+                src={fig.src}
+                width={fig.width}
+                height={fig.height}
+                alt="Figure accompanying the question"
+                loading="lazy"
+                sizes="(max-width: 640px) 100vw, 400px"
+                className="max-w-full h-auto rounded-lg border border-gray-200 bg-white p-2 dark:border-gray-700"
+              />
+            ))}
+          </div>
+        )}
 
         {/* Answer toggle — always shown */}
         <div>

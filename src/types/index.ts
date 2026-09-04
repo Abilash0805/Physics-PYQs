@@ -16,6 +16,16 @@ export interface Question {
   solved: boolean;
   in_syllabus: boolean;
   removed_reason?: string;
+  /** Diagrams printed with the question, lifted out of the source PDF. */
+  figures?: QuestionFigure[];
+}
+
+/** A figure clipped from the source PDF, with its intrinsic size so the
+ *  card can reserve space rather than reflow when the image arrives. */
+export interface QuestionFigure {
+  src: string;
+  width: number;
+  height: number;
 }
 
 export interface Chapter {
