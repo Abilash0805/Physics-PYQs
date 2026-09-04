@@ -4,7 +4,8 @@ import { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import { CheckSquare, BookOpen, TrendingUp } from "lucide-react";
 import type { Question, Chapter } from "@/types";
-import { getSolved } from "@/lib/storage";
+import { SOLVED_KEY, SOLVED_EVENT } from "@/lib/storage";
+import { useStoredSet } from "@/hooks/useStoredSet";
 import { cn } from "@/lib/utils";
 
 interface ProgressClientProps {
@@ -13,14 +14,7 @@ interface ProgressClientProps {
 }
 
 export default function ProgressClient({ allQuestions, chapters }: ProgressClientProps) {
-  const [solvedIds, setSolvedIds] = useState<Set<string>>(new Set());
-
-  useEffect(() => {
-    setSolvedIds(getSolved());
-    const handler = () => setSolvedIds(getSolved());
-    window.addEventListener("solved-changed", handler);
-    return () => window.removeEventListener("solved-changed", handler);
-  }, []);
+  const solvedIds = useStoredSet(SOLVED_KEY, SOLVED_EVENT);
 
   const totalSolved = solvedIds.size;
   const totalQuestions = allQuestions.length;

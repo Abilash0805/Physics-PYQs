@@ -3,29 +3,37 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { Moon, Sun, Menu, X, Search, BookmarkIcon, BookOpen, Home, CheckSquare } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
-  const [dark, setDark] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
 
-  useEffect(() => {
-    const stored = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const isDark = stored === "dark" || (!stored && prefersDark);
-    setDark(isDark);
-    document.documentElement.classList.toggle("dark", isDark);
-  }, []);
+  // The theme is already applied to <html> by the bootstrap script in the
+  // layout, so it is read from there rather than re-derived after mount.
+  // Reading it as an external store keeps the first render correct instead
+  // of rendering the light icon and correcting it in an effect.
+  const dark = useSyncExternalStore(
+    (onChange) => {
+      window.addEventListener("theme-changed", onChange);
+      return () => window.removeEventListener("theme-changed", onChange);
+    },
+    () => document.documentElement.classList.contains("dark"),
+    () => false
+  );
 
   const toggleDark = () => {
     const next = !dark;
-    setDark(next);
     document.documentElement.classList.toggle("dark", next);
-    localStorage.setItem("theme", next ? "dark" : "light");
+    try {
+      localStorage.setItem("theme", next ? "dark" : "light");
+    } catch {
+      // private mode - the toggle still applies for this page view
+    }
+    window.dispatchEvent(new CustomEvent("theme-changed"));
   };
 
   const navLinks = [

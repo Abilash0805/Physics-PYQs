@@ -16,7 +16,8 @@ import { cn } from "@/lib/utils";
 import type { Question } from "@/types";
 import MathRenderer from "@/components/MathRenderer";
 import AnswerRenderer from "@/components/AnswerRenderer";
-import { toggleBookmark, isBookmarked, toggleSolved, isSolved } from "@/lib/storage";
+import { toggleBookmark, toggleSolved, BOOKMARKS_KEY, SOLVED_KEY, BOOKMARKS_EVENT, SOLVED_EVENT } from "@/lib/storage";
+import { useStoredSet } from "@/hooks/useStoredSet";
 
 interface QuestionCardProps {
   question: Question;
@@ -46,26 +47,19 @@ function getYearColor(year: number) {
 
 export default function QuestionCard({ question, index = 0, showChapter = true }: QuestionCardProps) {
   const [answerVisible, setAnswerVisible] = useState(false);
-  const [bookmarked, setBookmarked] = useState(false);
-  const [solved, setSolved] = useState(false);
+  const bookmarked = useStoredSet(BOOKMARKS_KEY, BOOKMARKS_EVENT).has(question.id);
+  const solved = useStoredSet(SOLVED_KEY, SOLVED_EVENT).has(question.id);
 
   const hasRealAnswer = question.answer && !question.answer.startsWith("Refer to the official CBSE");
 
-  useEffect(() => {
-    setBookmarked(isBookmarked(question.id));
-    setSolved(isSolved(question.id));
-  }, [question.id]);
-
   const handleBookmark = () => {
-    const next = toggleBookmark(question.id);
-    setBookmarked(next);
-    window.dispatchEvent(new CustomEvent("bookmarks-changed"));
+    toggleBookmark(question.id);
+    window.dispatchEvent(new CustomEvent(BOOKMARKS_EVENT));
   };
 
   const handleSolved = () => {
-    const next = toggleSolved(question.id);
-    setSolved(next);
-    window.dispatchEvent(new CustomEvent("solved-changed"));
+    toggleSolved(question.id);
+    window.dispatchEvent(new CustomEvent(SOLVED_EVENT));
   };
 
   const marksColor = MARKS_COLOR[question.marks] ?? "blue";

@@ -4,21 +4,15 @@ import { useState, useEffect, useMemo } from "react";
 import { BookmarkIcon } from "lucide-react";
 import type { Question } from "@/types";
 import QuestionCard from "@/components/QuestionCard";
-import { getBookmarks } from "@/lib/storage";
+import { BOOKMARKS_KEY, BOOKMARKS_EVENT } from "@/lib/storage";
+import { useStoredSet } from "@/hooks/useStoredSet";
 
 interface BookmarksClientProps {
   allQuestions: Question[];
 }
 
 export default function BookmarksClient({ allQuestions }: BookmarksClientProps) {
-  const [bookmarkedIds, setBookmarkedIds] = useState<Set<string>>(new Set());
-
-  useEffect(() => {
-    setBookmarkedIds(getBookmarks());
-    const handler = () => setBookmarkedIds(getBookmarks());
-    window.addEventListener("bookmarks-changed", handler);
-    return () => window.removeEventListener("bookmarks-changed", handler);
-  }, []);
+  const bookmarkedIds = useStoredSet(BOOKMARKS_KEY, BOOKMARKS_EVENT);
 
   const bookmarked = useMemo(
     () => allQuestions.filter((q) => bookmarkedIds.has(q.id)),

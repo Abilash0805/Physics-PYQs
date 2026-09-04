@@ -29,6 +29,19 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+      <head>
+        {/*
+          Applies the saved theme before the page paints. Without this the
+          document renders light and only switches once React has mounted,
+          which both flashes a white page at anyone using dark mode and
+          forces the navbar to discover the theme after its first render.
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var s=localStorage.getItem('theme');var d=s==='dark'||(!s&&window.matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.classList.toggle('dark',d);}catch(e){}})();`,
+          }}
+        />
+      </head>
       <body className="min-h-full bg-gray-50 dark:bg-gray-950">
         <Navbar />
         <div className="flex max-w-screen-2xl mx-auto">
